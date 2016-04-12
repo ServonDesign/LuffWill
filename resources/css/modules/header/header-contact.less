@@ -1,0 +1,44 @@
+.header--contact {
+
+  &.theme--green {
+    .header--contact__nav-item {
+      color: @green-theme;
+    }
+  }
+
+  &.theme--orange {
+    .header--contact__nav-item {
+      color: @orange-theme;
+    }
+  }
+
+  .header--contact__nav {
+    .flexbox();
+  }
+
+  .header--contact__nav-item{
+    .flexbox();
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .header--contact__icon {
+    stroke: #000; //temporary
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    position: relative;
+
+    svg {
+      height: inherit;
+      width: inherit;
+    }
+  }
+
+}
