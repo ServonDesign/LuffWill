@@ -6,6 +6,7 @@
     .container();
     .flex-direction(column);
     .justify-content(center);
+    .align-items(center);
 
     @media(min-width: @md-min){
       height: 340px;
@@ -37,14 +38,39 @@
 
   // orange version
   &.orange-theme {
-    background: url(../imgs/hero-orange.jpg) no-repeat top center;
+    background: #ed9f37;
     background-size: 100% 100%;
+
+    @media(min-width: @md-min){
+      background: url(../imgs/hero-orange.jpg) no-repeat center;
+      background-size: cover;
+    }
+
   }
 
   // green version
   &.green-theme {
-    background: url(../imgs/hero-green.jpg) no-repeat top center;
+    background: #afd469;
     background-size: 100% 100%;
+
+    @media(min-width: @md-min){
+      background: url(../imgs/hero-green.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .hero--image {
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+
+    @media(min-width: @md-min){
+      max-width: 120px;
+    }
+
+    @media(min-width: @lg-min){
+      max-width: 200px;
+    }
   }
 
 }
