@@ -1,0 +1,65 @@
+/*
+** Header Navigation section
+*/
+
+.header--nav {
+
+  a {
+    text-decoration: none;
+  }
+
+  .header--nav__container {
+    color: @nav-header;
+    margin: 15px 0;
+    display: table;
+
+    @media(min-width: @lg-min){
+      margin: 25px 0;
+    }
+  }
+
+  .header--nav__item {
+    display: table-cell;
+    padding-right:20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .header--nav__link {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    .flexbox();
+    .align-items(baseline);
+    color: @nav-header;
+
+    .header--nav__icon {
+      fill: #a4a4a4;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      position: relative;
+      top: 3px;
+
+      svg {
+        height: inherit;
+        width: inherit;
+      }
+    }
+  }
+
+  .green-bold,
+  .orange-bold {
+    font-family: 'Aileron Bold'
+  }
+
+  .orange-bold {
+    color: @orange-theme;
+  }
+
+  .green-bold {
+    color: @green-theme;
+  }
+
+}

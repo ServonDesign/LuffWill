@@ -1,0 +1,50 @@
+.hero {
+
+  &--container {
+    height: 188px;
+    text-align: center;
+    .container();
+    .flex-direction(column);
+    .justify-content(center);
+
+    @media(min-width: @md-min){
+      height: 340px;
+    }
+
+    @media(min-width: @lg-min){
+      height: 596px;
+    }
+  }
+
+  .hero--container__logo,
+  .hero--container__tagline {
+    display: block;
+  }
+
+  .hero--container__tagline {
+    font-family: 'Aileron Light';
+    color: #ffffff;
+    font-size: 38px;
+
+    @media(min-width: @md-min){
+      font-size: 75px;
+    }
+
+    @media(min-width: @lg-min){
+      font-size: 121px;
+    }
+  }
+
+  // orange version
+  &.orange-theme {
+    background: url(../imgs/hero-orange.jpg) no-repeat top center;
+    background-size: 100% 100%;
+  }
+
+  // green version
+  &.green-theme {
+    background: url(../imgs/hero-green.jpg) no-repeat top center;
+    background-size: 100% 100%;
+  }
+
+}
