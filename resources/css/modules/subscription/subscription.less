@@ -1,0 +1,181 @@
+.subscribe {
+
+  margin-bottom: 80px;
+
+  &--container {
+    .container();
+  }
+
+  h4 {
+    font-size: 3.4rem;
+    font-weight: 300;
+  }
+
+  &--form-container {
+    width: 100%;
+  }
+
+  &--form {
+    .flexbox();
+    .justify-content(space-between);
+    width: 100%;
+
+    input {
+      border-width: 0 0 1px 0;
+      border-color: #adadad;
+      border-style: solid;
+      padding: 1.8rem 0;
+      width: 290px;
+      .placeholder(#adadad);
+    }
+
+  }
+
+  &--group-input {
+    .flexbox();
+    .justify-content(space-between);
+    width: 910px;
+  }
+
+}
+
+.grid{
+	min-height: 200px;
+	background-color: #aaa;
+	margin-bottom: 15px;
+	border: 4px solid #ccc;
+
+	&__example1{
+		//base mixins
+
+		//.base-column(@gutterType, @gutterSize);
+		.base-column(margin, 15px);
+		// width: 100%;
+		// margin-left: 15px;
+		// margin-right: 15px;
+
+		//.column(@column-size, @breakpoint, @gutter-type, @gutter-size);
+		.column(6, md, margin, 15px);
+		// @media(min-width: @md-min){ (62em)
+		// 		width: calc(50% - 30px);    (20px come frome gutter width * 2)
+		// 		margin-left: 15px;
+		// 		margin-right: 15px;
+		// }
+	}
+
+	&__example2{
+		//base mixins using default mixin parameters
+
+		//.base-column(@gutterType: @default-gutterType, @gutterSize: @column-gutter-half);
+		.base-column();
+		// width: 100%;
+		// margin-left: 15px;
+		// margin-right: 15px;
+
+		//.column(@columns: @max-columns, @breakpoint: @default-breakpoint, @gutterType: @default-gutterType, @gutterSize: @column-gutter-half);
+		.column();
+		// @media(min-width: @md-min){ (62em)
+		// 		width: calc(100% - 30px);    (20px come frome gutter width * 2)
+		// 		margin-left: 15px;
+		// 		margin-right: 15px;
+		// }
+	}
+
+	&__example3{
+		// mobile 100%
+		// tablet 3 columns
+		// desktop 2 columns
+
+		// -m shortcut for gutter type of margin
+		// -p shortcut for gutter type of padding
+
+		.base-column-m();
+		// width: 100%;
+		// margin-left: 15px;
+		// margin-right: 15px;
+
+		.column-m(6, md);
+		// @media(min-width: @md-min){ (62em)
+		// 		width: calc(50% - 30px);    (20px come frome gutter width * 2)
+		// 		margin-left: 15px;
+		// 		margin-right: 15px;
+		// }
+
+		.column-m(4, lg);
+		// @media(min-width: @lg-min){ (75em)
+		// 		width: calc(33.33333% - 30px);    (20px come frome gutter width * 2)
+		// 		margin-left: 15px;
+		// 		margin-right: 15px;
+		// }
+
+		//without the shortcuts
+		//.base-column(margin);
+		//.column(6, md, margin);
+		//.column(4, lg, margin);
+	}
+
+	&__example4{
+		//same as sample 2 but with padding as the gutter
+
+		// mobile 100%
+		// tablet 3 columns
+		// desktop 2 columns
+
+		// -m shortcut for gutter type of margin
+		// -p shortcut for gutter type of padding
+
+		.base-column-p();
+		// width: 100%;
+		// padding-left: 15px;
+		// padding-right: 15px;
+
+		.column-p(6, md);
+		// @media(min-width: @md-min){ (62em)
+		// 		width: 50%;
+		// 		padding-left: 15px;
+		// 		padding-right: 15px;
+		// }
+
+		.column-p(4, lg);
+		// @media(min-width: @lg-min){ (75em)
+		// 		width: 33.33333%;
+		// 		padding-left: 15px;
+		// 		padding-right: 15px;
+		// }
+
+		//without the shortcuts
+		//.base-column(padding);
+		//.column(6, md, padding);
+		//.column(4, lg, padding);
+	}
+
+	&__example5{
+		//no gutter example
+
+		.base-column-nogutter();
+		// width: 100%
+
+		//.column-nogutter(6, md);
+		// @media(min-width: @md-min){ (62em)
+		// 		width: 50%;
+		// }
+	}
+
+	&__example6{
+		//column push example
+
+		//.column-push(@columns, @breakpoint, @gutterType, @pushColumns, @gutterSize);
+		.column-push(4, md, margin, 2, 15px);
+		// @media(min-width: @md-min){ (62em)
+		// 		width: 40%;
+		// 		padding-left: calc(20% + 15px);
+		// 		padding-right: 15px;
+		// }
+
+		// padding-left: calc(20% + 15px);
+		// 20% come from 2 column width
+		// 15px is the gutter width
+	}
+
+
+}

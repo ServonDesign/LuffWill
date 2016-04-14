@@ -1,0 +1,150 @@
+.featured-content {
+  padding: 0 15px;
+  margin-bottom: 8.0rem;
+
+  @media(min-width: @md-min){
+    padding: 0 30px;
+  }
+
+  &--container {
+    // .container();
+    // .flex-direction(column);
+  }
+
+  &.theme--orange {}
+
+  &.theme--green {}
+
+  h2 {
+    font-size: 3.4rem;
+    margin-bottom: 5.5rem;
+    text-align: center;
+
+    @media(min-width: @lg-min){
+      text-align: left;
+    }
+  }
+
+  .featured-item--container {
+    .flexbox();
+    .justify-content(space-between);
+    margin-bottom: 2.2rem;
+    padding: 0 15px;
+
+    .featured__item {
+      //max-width: 363px;
+      border: 1px solid #e7e7e7;
+      margin-bottom: 2.5rem;
+      overflow: hidden;
+
+      .base-column-m();
+  		.column-m(6, md);
+  		.column-m(4, lg);
+
+      &.theme--green {
+        .btn {
+          background: @green-theme;
+          color: #ffffff;
+          height: 4.2rem;
+        }
+
+        .featured__icon svg {
+          stroke: @green-theme;
+        }
+      }
+
+      &.theme--orange {
+        .btn {
+          background: @orange-theme;
+          color: #ffffff;
+          height: 4.2rem;
+        }
+
+        .featured__icon svg {
+          stroke: @orange-theme;
+        }
+      }
+
+      img {
+        max-height: 243px;
+        height: 100%;
+      }
+    }
+
+    .featured__info {
+      padding: 0 2.2rem 2.2rem;
+    }
+
+  }
+
+  .featured__image {
+    position: relative;
+
+    .featured__subinfo {
+      background: rgba(255, 255, 255, 0.82);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      .flexbox();
+      .justify-content(space-between);
+      .align-items(center);
+      height: 4.2rem;
+    }
+
+    .featured__price {
+      padding: 0 2.2rem;
+    }
+  }
+
+  .featured__info {
+    .featured__desc,
+    .btn {
+
+      display: none;
+
+      @media(min-width: @lg-min) {
+        display: block;
+      }
+    }
+  }
+
+  .featured__name,
+  .featured__desc {
+    color: #3e3e3e;
+  }
+
+  .featured__name {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    margin-top: 1.0em;
+    font-weight: 300;
+  }
+
+  .featured__desc {
+    font-size: 1.5rem;
+    margin-bottom: 3.0rem;
+  }
+
+  .featured__icon {
+    width: 16rem;
+    height: 16rem;
+    background: rgba(255,255,255, 0.8);
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    border-radius: 50%;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 9.5rem;
+      left: 3.0rem;
+      fill: none;
+      cursor: pointer;
+    }
+  }
+
+}
