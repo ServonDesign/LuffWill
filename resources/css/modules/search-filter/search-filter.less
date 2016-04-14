@@ -1,0 +1,143 @@
+.search-filter {
+
+  background: #fefefe;
+  border-bottom: 1px solid #fbdcb2;
+
+  &--container {
+    .container();
+    .align-items(center);
+    height: 88px;
+  }
+
+  &--form {
+
+    border-right: 1px solid #fbdcb2;
+    border-left: 1px solid #fbdcb2;
+    height: 100%;
+    margin: 0 20px;
+    width: 750px;
+
+    form {
+      .flexbox();
+      .align-items(center);
+      .justify-content(space-between);
+      padding: 0 20px;
+      margin: 25px 0;
+
+      & > * {
+        margin-left: 15px;
+
+        &:first-child {
+          margin-left: 0px;
+        }
+      }
+
+      input::-webkit-input-placeholder {
+        font-size: 1.4rem;
+      }
+    }
+
+    form.theme--orange {
+      #slider-snap-value-lower,
+      #slider-snap-value-upper,
+      input,
+      input::-webkit-input-placeholder,
+      .search-filter--range__label {
+        color: @orange-theme;
+      }
+
+      .noUi-connect,
+      .noUi-handle {
+        background: @orange-theme;
+      }
+      .noUi-base {
+        background: #ed9f37;
+      }
+      .noUi-background {
+        box-shadow: none;
+        background: #ed9f37;
+      }
+    }
+
+    form.theme--green {
+      #slider-snap-value-lower,
+      #slider-snap-value-upper,
+      input,
+      input::-webkit-input-placeholder,
+      .search-filter--range__label {
+        color: @green-theme;
+      }
+
+      .noUi-connect,
+      .noUi-handle {
+        background: @green-theme;
+      }
+      .noUi-base {
+        background: #afd469;
+      }
+      .noUi-background {
+        background: #afd469;
+        background: @green-theme;
+      }
+    }
+
+    .noUi-handle {
+       box-shadow: none;
+       border: none
+     }
+  }
+
+  #slider-snap-value-lower,
+  #slider-snap-value-upper {
+    font-family: 'Aileron Bold';
+  }
+
+  &--map {
+
+    .btn {
+      .flexbox();
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      margin-left: 5px;
+    }
+  }
+
+  &--range__label {
+    text-transform: uppercase;
+    font-family: 'Aileron Bold';
+    margin-left: 0;
+  }
+
+  #slider {
+    width: 160px;
+  }
+
+}
+
+#slider {
+  width: 160px;
+}
+
+.btn {
+  background: #a4a4a4;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.btn--icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  position: relative;
+
+  svg {
+    height: inherit;
+    width: inherit;
+  }
+}
+
+@import 'radio';
+@import 'range-slider';

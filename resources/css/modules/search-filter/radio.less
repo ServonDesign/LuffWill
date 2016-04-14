@@ -1,0 +1,64 @@
+.radio--group {
+  .flexbox();
+  font-family: 'Aileron Bold';
+
+  .radio {
+    padding-bottom: 0;
+
+    &:last-child > label {
+      margin-right: 0px;
+    }
+
+    & > label {
+      .flexbox();
+      .align-items(center);
+      .flex-direction(row-reverse);
+      margin-right: 30px;
+    }
+
+    & > label > label {
+      width: 33px;
+      height: 33px;
+      margin-right: 12px;
+    }
+
+    & > label > label:after {
+      width: 11px;
+      height: 11px;
+      background: #e8f1e3;
+    }
+
+    & > label > span {
+      text-transform: uppercase;
+    }
+  }
+
+  .radio--buy {
+    & > label > label {
+      border: 1px solid @orange-theme;
+    }
+
+    input:checked+label:after {
+      background: @orange-theme;
+    }
+
+  }
+
+  .radio--sell {
+    & > label > label {
+      border: 1px solid @green-theme;
+    }
+
+    input:checked+label:after {
+      background: @green-theme;
+    }
+
+  }
+
+  .radio--buy,
+  .radio--sell {}
+
+  .radio + .radio {
+    margin: 0;
+  }
+}
