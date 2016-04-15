@@ -1,5 +1,4 @@
 .featured-content {
-  padding: 0 15px;
   margin-bottom: 8.0rem;
 
   @media(min-width: @md-min){
@@ -29,14 +28,17 @@
     .flexbox();
     .justify-content(space-between);
     margin-bottom: 2.2rem;
-    padding: 0 15px;
+    padding: 0px;
+
+    @media(min-width: @lg-min){
+      padding: 0 15px;
+    }
 
     .featured__item {
       //max-width: 363px;
       border: 1px solid #e7e7e7;
       margin-bottom: 2.5rem;
       overflow: hidden;
-
       .base-column-m();
   		.column-m(6, md);
   		.column-m(4, lg);

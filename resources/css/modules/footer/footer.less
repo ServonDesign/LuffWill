@@ -1,0 +1,166 @@
+.footer {
+  background: #f1f8e5;
+  padding: 0 15px;
+
+  @media(min-width: @md-min) {
+    padding: 0 30px;
+  }
+
+  &--container {
+    .container();
+    .justify-content(space-between);
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #dfdfdf;
+    }
+  }
+
+  &--container__nav {
+    width: 100%;
+
+    @media(min-width: @md-min) {
+      width: auto;
+    }
+  }
+
+  &--container__nav,
+  &--container__info,
+  &--container__copyright {
+    padding: 2.4rem 0; 
+  }
+
+  &--nav {
+    .flexbox();
+    .flex-direction(column);
+    .flex-wrap(wrap);
+    height: 85px;
+
+    @media(min-width: @md-min) {
+      .flex-direction(row);
+      height: auto;
+    }
+
+    a {
+      font-size: 1.36rem;
+    }
+  }
+
+  .isMobile {
+    .footer--nav {
+      .flex-direction(row);
+      .flex-wrap(nowrap);
+      height: auto;
+    }
+
+    .footer--container__info {
+      width: 100%;
+    }
+  }
+
+  .isTablet{
+    .footer--container__info {
+      .flexbox();
+      .justify-content(space-between);
+      width: 100%;
+    }
+
+    .footer__address,
+    .footer__copyright {
+      text-align: left
+    }
+
+    .footer__address p,
+    .footer__names p,
+    .footer__copyright p {
+      margin: 0;
+    }
+
+    .footer__names {
+      text-align: left;
+    }
+
+  }
+
+  .isDesktop {
+    .footer--container__info {
+      .flexbox();
+      .justify-content(space-between);
+      width: 50%;
+    }
+
+    .footer--container__copyright {
+      width: 50%;
+    }
+
+    .footer__names,
+    .footer__contacts,
+    .footer__copyright,
+    .footer__address {
+      text-align: left;
+      font-size: 1.3rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &--nav__item {
+    width: calc(100% / 3);
+    text-align: center;
+    margin-right: 0;
+
+    @media(min-width: @md-min) {
+      width: auto;
+      text-align: left;
+      margin-right: 2.5rem;
+    }
+  }
+
+  .footer__address p,
+  .footer__names p,
+  .footer__names div,
+  .footer__contacts a,
+  .footer__contacts span,
+  .footer--copyright p,
+  .footer__copyright p,
+  &--container__copyright p{
+      font-size: 1.3rem;
+  }
+
+  .footer__address,
+  .footer__names,
+  .footer__contacts,
+  .footer__copyright {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer--copyright {
+    text-align: center;
+
+    p{
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+    }
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+}
