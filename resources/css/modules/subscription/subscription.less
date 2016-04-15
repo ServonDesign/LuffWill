@@ -1,14 +1,42 @@
 .subscribe {
 
-  margin-bottom: 80px;
+  margin-bottom: 3.5rem;
+
+  @media(min-width: @lg-min) {
+    margin-bottom: 8rem;
+  }
 
   &--container {
     .container();
+    .justify-content(center);
+
+    @media(min-width: @lg-min) {
+      .justify-content(start);
+    }
+
+    svg {
+      width: 3.3rem;
+      height: 3.3rem;
+    }
   }
 
   h4 {
-    font-size: 3.4rem;
+    font-size: 2.2rem;
     font-weight: 300;
+    text-align: center;
+    padding: 0 1.5rem;
+    display: block;
+    width: 100%;
+
+    @media(min-width: @md-min) {
+      padding: 0 3rem;
+    }
+
+    @media(min-width: @lg-min) {
+      font-size: 3.4rem;
+      text-align: left;
+      padding: 0;
+    }
   }
 
   &--form-container {

@@ -3,6 +3,8 @@ import noUiSlider from "./../vendor/noUiSlider/nouislider";
 import wNumb from "./../vendor/wNumb/wNumb";
 import {sum, square, MyClass} from "./import";
 import {navigation, sideSearch} from "./navigation";
+import {rangeSlider} from "./rangeSlider";
+import {modal} from "./modal";
 
 $(document).ready(init);
 
@@ -30,28 +32,8 @@ function runImportedFunctions(){
 
 	console.log($.fn);
 
-	navigation();
-	sideSearch();
-
-	// nouislider init
-	var snapSlider = document.getElementById('slider');
-
-	noUiSlider.create(snapSlider, {
-		start: [ 250000, 750000 ],
-
-		connect: true,
-		range: {
-			'min': 0,
-			'max': 1000000
-		}
-	});
-
-	var snapValues = [
-		document.getElementById('slider-snap-value-lower'),
-		document.getElementById('slider-snap-value-upper')
-	];
-
-	snapSlider.noUiSlider.on('update', function( values, handle ) {
-		snapValues[handle].innerHTML = values[handle];
-	});
-	}
+		navigation();
+		sideSearch();
+		rangeSlider();
+		modal();
+}

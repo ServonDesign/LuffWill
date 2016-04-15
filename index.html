@@ -81,6 +81,10 @@
 				<polygon stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="24,5.2 30,18 42.8,18 33.4,27.8 37.2,42.8 24,35.3 10.8,42.8 14.6,27.8 5.2,18 18,18 " stroke-linejoin="miter"></polygon>
 			</symbol>
 
+			<svg id="subscribe" viewBox="0 0 32 32" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" fill="none">
+				<path stroke="#91c431" d="M13 6.5H1V31h24.497V19"/>
+				<path stroke="#f18b00" d="M22 5l5 5M15 22h-5v-5L25 2l5 5-15 15z"/>
+			</svg>
 		</svg>
 	</div>
 
@@ -153,51 +157,52 @@
 	</div>
 
 	<div class="side-search hide-min-lg">
-		<div class="search-filter--container">
-			<div class="radio--group">
-			    <div class="radio radio--buy">
-			        <label>
-			            <span class="font-bold font-white">Buy</span>
-			            <input type="radio" name="side-search-choice" value="buy" checked="checked"><label></label>
-			        </label>
-			    </div>
-			    <div class="radio radio--sell">
-			        <label>
-			            <span class="font-bold font-white">Rent</span>
-			            <input type="radio" name="side-search-choice" value="sell"><label></label>
-			        </label>
-			    </div>
-			</div>
-			<div class="search-filter--form">
-				<form action="#" class="theme--green">
-					<div class="search-filter--range__label">price range:</div>
+	  <div class="search-filter--container">
+	    <div class="radio--group">
+	        <div class="radio radio--buy">
+	            <label>
+	                <span class="font-bold font-white">Buy</span>
+	                <input type="radio" name="side-search-choice" value="buy" checked="checked"><label></label>
+	            </label>
+	        </div>
+	        <div class="radio radio--sell">
+	            <label>
+	                <span class="font-bold font-white">Rent</span>
+	                <input type="radio" name="side-search-choice" value="sell"><label></label>
+	            </label>
+	        </div>
+	    </div>
+	    <div class="search-filter--form">
+	      <form action="#" class="theme--green">
+	        <div class="search-filter--range__label">price range:</div>
 
-					<div class="slider--value">
-						<div id="slider-snap-value-lower" class="font-bold"></div>
-						<span>to</span>
-						<div id="slider-snap-value-upper" class="font-bold"></div>
-					</div>
+	        <div class="slider--value">
+	          <div id="slider-snap-value-lower-search" class="font-bold"></div>
+	          <span>to</span>
+	          <div id="slider-snap-value-upper-search" class="font-bold"></div>
+	        </div>
 
-					<div id="slider"></div>
+	        <div id="slider1"></div>
 
-					<div class="bn-form-group">
-            <input type="text" placeholder="Country/Town/Postcode">
-        	</div>
-					<button class="btn">
-							<span>Search</span>
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use></svg>
-					</button>
-				</form>
-			</div>
-			<div class="search-filter--map">
-				<button class="btn">
-					<span>Map Search</span>
-					<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map"></use></svg>
-				</button>
-			</div>
+	        <div class="bn-form-group">
+	          <input type="text" placeholder="Country/Town/Postcode">
+	        </div>
+	        <button class="btn">
+	            <span>Search</span>
+	            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use></svg>
+	        </button>
+	      </form>
+	    </div>
+	    <div class="search-filter--map">
+	      <button class="btn">
+	        <span>Map Search</span>
+	        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map"></use></svg>
+	      </button>
+	    </div>
 
-		</div>
+	  </div>
 	</div>
+
 
 	<section class="hero orange-theme">
 	  <div class="hero--container">
@@ -266,6 +271,15 @@
 	      <p class="font-bold">We will continue to strive to provide a friendly and efficient service to create results for our clients.</p>
 	    </div>
 	  </div>
+	</section>
+
+	<section class="subscribe hide-min-lg">
+		<div class="subscribe--container">
+			<h4><span class="font-orange">Need a <span class="font-bold">free, no obligation</span> valuation?..</span> <span class="font-green">just send us you details..</span></h4>
+			<a class="subscribe--icon" href="#">
+				<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subscribe"></use></svg>
+			</a>
+		</div>
 	</section>
 
 	<section class="featured-content">
@@ -385,6 +399,12 @@
 
 	<footer class="footer">
 	  <div class="footer--container">
+			<div class="footer--container__logo hide-min-md">
+				<div class="footer__logos">
+					<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
+					<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
+				</div>
+			</div>
 			<div class="footer--container__nav">
 				<ul class="footer--nav">
 					<li class="footer--nav__item"><a href="#" class="font-orange font-bold">home</a></li>
@@ -462,16 +482,22 @@
 						<p><span class="font-bold">Mrs Mary Luff</span> (Director)</p>
 					</div>
 					<div class="footer__copyright">
-				      <ul class="footer--nav">
-				        <li class="footer--nav__item"><a href="#">f</a></li>
-				        <li class="footer--nav__item"><a href="#">f</a></li>
-				        <li class="footer--nav__item"><a href="#">f</a></li>
-				        <li class="footer--nav__item"><a href="#">f</a></li>
-				        <li class="footer--nav__item"><a href="#">f</a></li>
-				        <li class="footer--nav__item"><a href="#">f</a></li>
-				      </ul>
+			      <ul class="footer--nav">
+			        <li class="footer--nav__item"><a href="#">f</a></li>
+			        <li class="footer--nav__item"><a href="#">f</a></li>
+			        <li class="footer--nav__item"><a href="#">f</a></li>
+			        <li class="footer--nav__item"><a href="#">f</a></li>
+			        <li class="footer--nav__item"><a href="#">f</a></li>
+			        <li class="footer--nav__item"><a href="#">f</a></li>
+			      </ul>
 		        <p class="font-bold">© Luff & Wilkin - Property Specialists 2016 <span></span></p>
 		        <p>Website design & build by <a href="#" class="font-orange">Servon Design Ltd</a></p>
+						<div class="footer--container__logo">
+							<div class="footer__logos">
+								<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
+								<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
+							</div>
+						</div>
 		      </div>
 				</div>
 			</div>
@@ -499,12 +525,32 @@
 				</div>
 				<div class="footer--container__copyright">
 					<p><span class="font-bold">© Luff & Wilkin - Property Specialists 2016</span> | Website design & build by <a href="#" class="font-orange">Servon Design Ltd</a></p>
+					<div class="footer--container__logo">
+						<div class="footer__logos">
+							<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
+							<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
 	</footer>
 
+	<div id="modal-container" class="modal-subscription">
+		<div class="subscribe--form-container">
+			<form action="#" class="subscribe--form">
+				<div class="subscribe--group-input">
+					<input type="text" placeholder="Your name.." class="font-light">
+					<input type="text" placeholder="Your number.." class="font-light">
+					<input type="text" placeholder="Your email.." class="font-light">
+					<button class="btn btn-orange-line">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="backdrop"></div>
 
 	<!-- scripts
 	================================================== -->

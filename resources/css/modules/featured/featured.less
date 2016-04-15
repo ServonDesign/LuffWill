@@ -1,13 +1,12 @@
 .featured-content {
-  margin-bottom: 8.0rem;
+  margin-bottom: 3.4rem;
 
   @media(min-width: @md-min){
     padding: 0 30px;
   }
 
-  &--container {
-    // .container();
-    // .flex-direction(column);
+  @media(min-width: @lg-min) {
+    margin-bottom: 8.0rem;
   }
 
   &.theme--orange {}
@@ -15,12 +14,15 @@
   &.theme--green {}
 
   h2 {
-    font-size: 3.4rem;
-    margin-bottom: 5.5rem;
+    font-size: 2.6rem;
+    margin-bottom: 2.6rem;
     text-align: center;
+    width: 100%;
 
     @media(min-width: @lg-min){
       text-align: left;
+      font-size: 3.4rem;
+      margin-bottom: 5.5rem;
     }
   }
 
@@ -74,7 +76,12 @@
     }
 
     .featured__info {
-      padding: 0 2.2rem 2.2rem;
+      padding: 0 1.1rem;
+
+      @media(min-width: @md-min) {}
+      @media(min-width: @lg-min) {
+        padding: 0 2.2rem 2.2rem;
+      }
     }
 
   }
@@ -117,11 +124,15 @@
   }
 
   .featured__name {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     line-height: 1.2;
-    margin-bottom: 0.5em;
-    margin-top: 1.0em;
+    margin: 2.5rem 0;
     font-weight: 300;
+
+    @media(min-width: @lg-min) {
+      font-size: 2.1rem;
+      margin: 1rem 0 0.5rem 0;
+    }
   }
 
   .featured__desc {

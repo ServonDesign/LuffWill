@@ -4,10 +4,18 @@
   @media(min-width: @md-min){
     padding: 0 30px;
   }
-  
+
   .container();
-  text-align: center;
-  margin: 78px auto;
+    text-align: center;
+    margin: 4rem auto;
+
+    @media(min-width: @md-min) {
+      margin: 4rem auto;
+    }
+
+    @media(min-width: @lg-min) {
+      margin: 78px auto;
+    }
 
   .main--title {
     font-size: 3.4rem;
@@ -15,6 +23,10 @@
   }
   .main--content {
     color: #777777;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
+
+    @media(min-width: @lg-min) {
+      font-size: 2.0rem;
+    }
   }
 }
