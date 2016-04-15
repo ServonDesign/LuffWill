@@ -1,0 +1,130 @@
+.side-search {
+
+  background: #add365;
+  transition: 0.3s all ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  z-index: 1;
+  padding: 2rem;
+
+  @media(min-width: @md-min) {
+    width: 50%;
+    top: 6.0rem;
+    left: -50%;
+    bottom: 0;
+  }
+
+  &.isOpen {
+    left: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .radio--group {
+    label > label {
+      background: #ffffff;
+    }
+  }
+
+  .radio--group .radio--buy input:checked+label:after {
+      background: #f26324;
+  }
+
+  .search-filter--container {
+    display: block;
+  }
+
+  .search-filter--form {
+    border: none;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid #ffffff;
+    margin: 0 0 2rem 0;
+    form {
+      display: block;
+      padding: 0;
+
+      &.theme--orange {
+        .search-filter--range__label,
+        .slider--value span,
+        #slider-snap-value-lower,
+        #slider-snap-value-upper {
+          color: #ffffff;
+        }
+
+        .noUi-background,
+        .noUi-base {
+          background: #ffffff;
+        }
+      }
+
+      &.theme--green {
+        .search-filter--range__label,
+        .slider--value span,
+        #slider-snap-value-lower,
+        #slider-snap-value-upper {
+          color: #ffffff;
+        }
+
+        .noUi-background,
+        .noUi-base {
+          background: #ffffff;
+        }
+      }
+
+    }
+  }
+
+  #slider {
+    margin: 2rem 0 3rem;
+  }
+
+  .slider--value {
+    float: right;
+  }
+
+  .search-filter--range__label,
+  #slider-snap-value-lower,
+  #slider-snap-value-upper {
+    display: inline-block;
+  }
+
+  .bn-form-group {
+    margin: 0 0 2rem 0;
+  }
+
+  .btn {
+    .flexbox();
+    margin: 0;
+    background: #818181;
+    color: #ffffff;
+    border: none;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      margin-left: 5px;
+      fill: #ffffff;
+    }
+  }
+
+  .btn--icon {
+    fill: #ffffff;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    position: relative;
+
+    svg {
+      height: inherit;
+      width: inherit;
+    }
+  }
+
+
+
+}

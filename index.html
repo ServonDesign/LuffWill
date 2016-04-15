@@ -129,8 +129,73 @@
 			</div>
 			<div class="header--btn__sidenav hide-min-lg">
 	      <button><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></button>
-	      <!-- <button><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></button> -->
 	    </div>
+		</div>
+	</div>
+
+	<div class="side-nav hide-min-lg">
+		<ul class="side-nav__container">
+			<li class="side-nav__item">
+				<a class="side-nav__link" href="#">
+				<div class="side-nav__icon">
+					<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use></svg>
+				</div>
+				home
+				</a>
+			</li>
+			<li class="side-nav__item"><a class="side-nav__link font-bold" href="#">buy</a></li>
+			<li class="side-nav__item"><a class="side-nav__link font-bold" href="#">rent</a></li>
+			<li class="side-nav__item"><a class="side-nav__link" href="#">sell</a></li>
+			<li class="side-nav__item"><a class="side-nav__link" href="#">let</a></li>
+			<li class="side-nav__item"><a class="side-nav__link" href="#">contact</a></li>
+			<li class="side-nav__item"><a class="side-nav__link" href="#">news & events</a></li>
+		</ul>
+	</div>
+
+	<div class="side-search hide-min-lg">
+		<div class="search-filter--container">
+			<div class="radio--group">
+			    <div class="radio radio--buy">
+			        <label>
+			            <span class="font-bold font-white">Buy</span>
+			            <input type="radio" name="side-search-choice" value="buy" checked="checked"><label></label>
+			        </label>
+			    </div>
+			    <div class="radio radio--sell">
+			        <label>
+			            <span class="font-bold font-white">Rent</span>
+			            <input type="radio" name="side-search-choice" value="sell"><label></label>
+			        </label>
+			    </div>
+			</div>
+			<div class="search-filter--form">
+				<form action="#" class="theme--green">
+					<div class="search-filter--range__label">price range:</div>
+
+					<div class="slider--value">
+						<div id="slider-snap-value-lower" class="font-bold"></div>
+						<span>to</span>
+						<div id="slider-snap-value-upper" class="font-bold"></div>
+					</div>
+
+					<div id="slider"></div>
+
+					<div class="bn-form-group">
+            <input type="text" placeholder="Country/Town/Postcode">
+        	</div>
+					<button class="btn">
+							<span>Search</span>
+							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use></svg>
+					</button>
+				</form>
+			</div>
+			<div class="search-filter--map">
+				<button class="btn">
+					<span>Map Search</span>
+					<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map"></use></svg>
+				</button>
+			</div>
+
 		</div>
 	</div>
 
