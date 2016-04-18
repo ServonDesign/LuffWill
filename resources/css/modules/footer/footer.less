@@ -49,6 +49,10 @@
     }
   }
 
+  &--nav__social {
+    .justify-content(center);
+  }
+
   .isMobile {
     .footer--nav {
       .flex-direction(row);
@@ -94,6 +98,7 @@
 
     .footer--container__copyright {
       width: 50%;
+      text-align: right;
     }
 
     .footer__names,
@@ -119,6 +124,12 @@
       text-align: left;
       margin-right: 2.5rem;
     }
+  }
+
+  &--nav__item-social {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 1rem;
   }
 
   .footer__address p,
@@ -165,6 +176,9 @@
 
   .footer--container__logo {
     width: 100%;
+    @media(min-width: @lg-min) {
+      margin-left: 4rem;
+    }
   }
 
   .footer__logos {
