@@ -3,30 +3,26 @@
 // eslint
 // nodemon
 
-var gulp 				= require('gulp'),
-
-	less 				= require('gulp-less'),
-	LessPluginCleanCSS 	= require('less-plugin-clean-css'),
-    cleancss 			= new LessPluginCleanCSS({ advanced: true }),
-
-    sourcemaps 			= require('gulp-sourcemaps'),
-
-    eslint 				= require('gulp-eslint'),
-    watchify 			= require('watchify'),
-    browserify 			= require('browserify'),
-    babelify 			= require('babelify'),
-    uglify 				= require('gulp-uglify'),
-
-    source 				= require('vinyl-source-stream'),
-    buffer 				= require('vinyl-buffer'),
-
-    nodemon 			= require('gulp-nodemon'),
-
-    rename 				= require('gulp-rename'),
-    merge  				= require('merge-stream'),
-    assign 				= require('lodash.assign')
-    gutil 				= require('gulp-util'),
-    chalk 				= require('chalk');
+var gulp 								= require('gulp'),
+		less 								= require('gulp-less'),
+		LessPluginCleanCSS 	= require('less-plugin-clean-css'),
+    cleancss 						= new LessPluginCleanCSS({ advanced: true }),
+    sourcemaps 					= require('gulp-sourcemaps'),
+    eslint 							= require('gulp-eslint'),
+    watchify 						= require('watchify'),
+    browserify 					= require('browserify'),
+    babelify 						= require('babelify'),
+    uglify 							= require('gulp-uglify'),
+    source 							= require('vinyl-source-stream'),
+    buffer 							= require('vinyl-buffer'),
+    nodemon 						= require('gulp-nodemon'),
+    rename 							= require('gulp-rename'),
+    merge  							= require('merge-stream'),
+    assign 							= require('lodash.assign')
+    gutil 							= require('gulp-util'),
+    chalk 							= require('chalk');
+		svgstore 						= require('gulp-svgstore');
+		cheerio							= require('gulp-cheerio');
 
 
 gulp.task('less', function(){
@@ -51,16 +47,16 @@ gulp.task('watchLess', function(){
 function map_error(err) {
 	if (err.fileName) {
 		// regular error
-		gutil.log(chalk.red(err.name) 
-			+ ': ' 
-			+ chalk.yellow(err.fileName.replace(__dirname + '/src/js/', '')) 
-			+ ': ' 
-			+ 'Line ' 
-			+ chalk.magenta(err.lineNumber) 
-			+ ' & ' 
-			+ 'Column ' 
-			+ chalk.magenta(err.columnNumber || err.column) 
-			+ ': ' 
+		gutil.log(chalk.red(err.name)
+			+ ': '
+			+ chalk.yellow(err.fileName.replace(__dirname + '/src/js/', ''))
+			+ ': '
+			+ 'Line '
+			+ chalk.magenta(err.lineNumber)
+			+ ' & '
+			+ 'Column '
+			+ chalk.magenta(err.columnNumber || err.column)
+			+ ': '
 			+ chalk.blue(err.description));
 	} else {
 		// browserify error..
@@ -130,6 +126,20 @@ gulp.task('styleguide', function(){
 			require('open')('http://localhost:3000');
 		}, 1000);
 	});
+});
+
+
+gulp.task('icons', function () {
+  return gulp
+		.src('./resources/imgs/svg/*.svg')
+    .pipe(svgstore({inlineSvg: true}))
+    .pipe(cheerio({
+      run: function ($, file) {
+          $('svg').addClass('hide');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    .pipe(gulp.dest('./resources/imgs/svg/'))
 });
 
 gulp.task('build', ['browserify', 'less']);
