@@ -29,13 +29,42 @@ button {
     user-select: none;
     background-image: none;
     border: 1px solid @input-border;
-    //color: @input-color;
     border-radius: @input-border-radius;
-    //background: @input-bg;
 }
 
 .btn-orange-line {
-  border: 1px solid @orange-theme;
-  color: @orange-theme;
+  border: 1px solid @orange-default;
+  color: @orange-default;
   width: 13.2rem;
+}
+
+.btn-gallery-cta {
+  background: @orange-default;
+  color: @white;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  .flexbox();
+  .align-items(center);
+
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+  }
+}
+
+.btn-floor-cta {
+  background: @white;
+  color: @orange-dark;
+  border: 1px solid @orange-default;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  .flexbox();
+  .align-items(center);
+
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+  }
 }

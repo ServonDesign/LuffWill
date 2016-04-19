@@ -6,6 +6,7 @@
   &--container {
     .container();
     .align-items(center);
+    .justify-content(space-between);
     height: 88px;
   }
 
@@ -34,50 +35,6 @@
 
       input::-webkit-input-placeholder {
         font-size: 1.4rem;
-      }
-    }
-
-    form.theme--orange {
-      #slider-snap-value-lower,
-      #slider-snap-value-upper,
-      input,
-      input::-webkit-input-placeholder,
-      .search-filter--range__label {
-        color: @orange-theme;
-      }
-
-      .noUi-connect,
-      .noUi-handle {
-        background: @orange-theme;
-      }
-      .noUi-base {
-        background: #ed9f37;
-      }
-      .noUi-background {
-        box-shadow: none;
-        background: #ed9f37;
-      }
-    }
-
-    form.theme--green {
-      #slider-snap-value-lower,
-      #slider-snap-value-upper,
-      input,
-      input::-webkit-input-placeholder,
-      .search-filter--range__label {
-        color: @green-theme;
-      }
-
-      .noUi-connect,
-      .noUi-handle {
-        background: @green-theme;
-      }
-      .noUi-base {
-        background: #afd469;
-      }
-      .noUi-background {
-        background: #afd469;
-        background: @green-theme;
       }
     }
 
@@ -115,7 +72,7 @@
   }
 
   .btn {
-    background: #a4a4a4;
+    background: @dark-gray;
     color: #ffffff;
     font-size: 1.4rem;
   }
@@ -124,7 +81,6 @@
     fill: #ffffff;
     width: 24px;
     height: 24px;
-    margin-right: 10px;
     position: relative;
 
     svg {
@@ -133,6 +89,63 @@
     }
   }
 
+}
+
+
+//orange theme
+.theme--orange {
+  form.theme--orange {
+    #slider-snap-value-lower,
+    #slider-snap-value-upper {
+      color: @orange-dark;
+    }
+
+    input,
+    input::-webkit-input-placeholder,
+    .search-filter--range__label {
+      color: @orange-default;
+    }
+
+    .noUi-connect,
+    .noUi-handle {
+      background: @orange-dark;
+    }
+    .noUi-base {
+      background: @orange-lightest;
+    }
+    .noUi-background {
+      box-shadow: none;
+      background: @orange-lightest;
+    }
+  }
+}
+
+//green theme
+.theme--green {
+  form.theme--orange {
+    #slider-snap-value-lower,
+    #slider-snap-value-upper {
+      color: @green-dark;
+    }
+
+    input,
+    input::-webkit-input-placeholder,
+    .search-filter--range__label {
+      color: @green-default;
+    }
+
+    .noUi-connect,
+    .noUi-handle {
+      background: @green-dark;
+    }
+    .noUi-base {
+      background: @green-lightest;
+    }
+    .noUi-background {
+      box-shadow: none;
+      background: @green-lightest;
+    }
+  }
 }
 
 

@@ -15,36 +15,6 @@
     padding: 0 30px;
   }
 
-  //orange theme
-
-  &.theme--orange {
-    .header--contact__link {
-      color: @orange-theme;
-    }
-
-    .header--btn__search,
-    .header--btn__sidenav {
-      button {
-        stroke: @orange-theme;
-        fill: none;
-      }
-    }
-  }
-
-  &.theme--green {
-    .header--contact__link {
-      color: @green-theme;
-    }
-
-    .header--btn__search,
-    .header--btn__sidenav {
-      button {
-        stroke: @green-theme;
-        fill: none;
-      }
-    }
-  }
-
   &--container {
     .container();
     .flexbox();
@@ -84,4 +54,34 @@
     list-style-type: none;
   }
 
+}
+
+
+//orange theme
+.theme--orange {
+  .header--contact__link {
+    color: @orange-default;
+  }
+
+  .header--btn__search,
+  .header--btn__sidenav {
+    button {
+      stroke: @orange-default;
+      fill: none;
+    }
+  }
+}
+
+.theme--green {
+  .header--contact__link {
+    color: @green-default;
+  }
+
+  .header--btn__search,
+  .header--btn__sidenav {
+    button {
+      stroke: @green-default;
+      fill: none;
+    }
+  }
 }
