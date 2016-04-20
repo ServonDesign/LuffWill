@@ -1,6 +1,22 @@
 .sidebar{
 	&__bands{
 		font-size: 1.3rem;
+
+		.sidebar__icon {
+			border: 1px solid @gray;
+			stroke: transparent;
+		}
+
+		.sidebar__item__icon {
+			background: @lightest-gray;
+			&.sidebar__item__icon--first {
+				background: none;
+			}
+		}
+
+		.sidebar__item__icon:before {
+			background: @dark-gray;
+		}
 	}
 
 	&__item{
@@ -43,4 +59,8 @@
 			color: @sidebar-light;
 		}
 	}
+
+	.sidebar__icon {
+			stroke: transparent;
+		}
 }
