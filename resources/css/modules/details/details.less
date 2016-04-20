@@ -350,14 +350,8 @@
 
 //orange theme styles
 .theme--orange .details {
-
-}
-
-//green theme styles
-.theme--green .details {
-
   .link-back {
-    color: @green-theme;
+    color: @orange-default;
     .flexbox();
     .justify-content(end);
     .align-items(center);
@@ -365,13 +359,35 @@
     svg {
       width: 1.6rem;
       height: 1.6rem;
-      fill: @orange-theme;
+      fill: @green-default;
       margin-right: 0.8rem;
     }
   }
 
   .details__name {
-    color: @orange-theme;
+    color: @green-default;
+  }
+}
+
+//green theme styles
+.theme--green .details {
+
+  .link-back {
+    color: @green-default;
+    .flexbox();
+    .justify-content(end);
+    .align-items(center);
+
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: @orange-default;
+      margin-right: 0.8rem;
+    }
+  }
+
+  .details__name {
+    color: @orange-default;
   }
 
 }

@@ -30,6 +30,8 @@ button {
     background-image: none;
     border: 1px solid @input-border;
     border-radius: @input-border-radius;
+    font-size: 1.6rem;
+    text-transform: capitalize;
 }
 
 .btn-orange-line {
@@ -66,5 +68,128 @@ button {
     width: 1.6rem;
     height: 1.6rem;
     margin-left: 1rem;
+  }
+}
+
+.btn-subfilter {
+  border: 1px solid @lightest-gray;
+  svg {
+    width: 1.2rem;
+    height: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.btn-view-filter,
+.btn-location {
+  border: none;
+}
+
+.btn-location {
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: @light-gray;
+  }
+}
+
+.btn-results-cta {
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: @light-gray;
+  }
+}
+
+.btn-more-details {
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: @light-gray;
+  }
+}
+
+// theme orange btn
+.theme--orange {
+  .btn-subfilter {
+    color: @orange-default;
+
+    svg {
+      width: 1.2rem;
+      height: 1rem;
+      margin-left: 1rem;
+      fill: @orange-default;
+    }
+  }
+  .btn-view-filter {
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: @orange-default;
+    }
+
+    &:first svg {
+      fill: @orange-default;
+    }
+
+    &:last-child svg {
+      fill: @light-gray;
+    }
+  }
+
+  .btn-results-cta {
+    border: 1px solid @orange-default;
+    color: @orange-default;
+  }
+
+  .btn-more-details {
+    background: @orange-default;
+    color: #ffffff;
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: #ffffff;
+    }
+  }
+}
+
+//theme green btn
+.theme--green {
+  .btn-subfilter {
+    color: @green-default;
+
+    svg {
+      width: 1.2rem;
+      height: 1rem;
+      margin-left: 1rem;
+      fill: @green-default;
+    }
+
+  }
+
+  .btn-view-filter {
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: @green-default;
+    }
+
+    &:last-child svg {
+      fill: @light-gray;
+    }
+  }
+  .btn-results-cta {
+    border: 1px solid @green-default;
+    color: @green-default;
+  }
+
+  .btn-more-details {
+    background: @green-default;
+    color: #ffffff;
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: #ffffff;
+    }
   }
 }

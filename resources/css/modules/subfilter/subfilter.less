@@ -1,0 +1,83 @@
+.sub-filter {
+	
+	margin: 2.5rem 0 0 0;
+
+	&--container {
+		.container();
+		.justify-content(space-between);
+	}
+
+	.main-filter,
+	.quantity-filter {
+		.flexbox();
+	}
+
+	.main-filter {
+		& > * {
+			margin: 0 20px 0 0;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	.view-render {
+		& > * {
+			//margin: 0 10px 0 0;
+		}
+	}
+
+	.checkbox {
+		padding: 0;
+	}
+
+}
+
+// theme orange 
+.theme--orange {
+	.view-render--label {
+		color: @orange-default;
+	}
+
+	.checkbox > label {
+		color: @orange-default;
+	}
+
+	.link-prev,
+	.link-next {
+		color: @orange-default;
+
+		svg {
+			fill: @green-default;
+		}
+  	}
+
+  	li.isSelected {
+  		background: @orange-default;
+  	}
+}
+
+// theme green 
+.theme--green {
+	.view-render--label {
+		color: @green-default;
+	}
+
+	.checkbox > label {
+		color: @green-default;
+	}
+
+	.link-prev,
+	.link-next {
+		color: @green-default;
+
+		svg {
+			fill: @orange-default;
+		}
+  	}
+
+  	li.isSelected {
+  		background: @green-default;
+  	}
+}

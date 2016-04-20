@@ -1,0 +1,194 @@
+.results {
+
+	&--container {
+		.container();
+	}
+
+	.results--list {
+		.flexbox();
+		.justify-content(space-between);
+		.flex-direction(column);
+		width: 100%;   
+
+		@media(min-width: @md-min) {
+			.flex-direction(row);
+			.flex-wrap(wrap);
+		}
+		    
+
+		@media(min-width: @lg-min) {
+			 .flex-direction(column);   
+		}
+		    
+		    
+	}
+
+	.results--list__item {
+		.flexbox();
+		.flex-wrap(wrap);
+		.flex-direction(column);
+		padding: 0;
+		border: 1px solid @lightest-gray;
+		margin-bottom: 3rem;
+
+		.base-column-m();
+  		.column-m(6, md);
+  		.column-m(12, lg);
+		
+
+		@media(min-width: @md-min) {
+			.flex-direction(column);
+			padding: 0; 
+			.flex-wrap(wrap); 
+		}
+		
+		@media(min-width: @lg-min) {
+			.flex-direction(row);
+			.flex-wrap(nowrap); 
+			padding: 4rem 0;
+			border: none;
+			border-bottom: 1px solid @lightest-gray;  
+			margin-bottom: 0; 	    
+		}
+		            
+	}
+
+	//image
+	.results__item__image {
+		position: relative;
+		width:100%;
+
+		@media(min-width: @lg-min) {
+			max-width: 44.8rem;
+			max-height: 32.2rem;    
+		}
+		    
+
+
+		.results__image {
+
+			width: 100%;
+
+			@media(min-width: @lg-min) {
+				max-width: 44.8rem;
+				height: 32.2rem;
+				width: 44.8rem;    
+			}
+			    
+			
+		}
+
+		.results__bottom-info {
+			background: rgba(255,255,255, 0.7);
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+
+			.flexbox();
+			.justify-content(space-between);
+			.align-items(center);
+
+
+			span {
+				font-size: 1.8rem;
+				margin-right: 1.5rem;
+			}
+
+			span > svg {
+				width: 1.8rem;
+				height: 1.8rem;
+				margin-left: 0.5rem;
+			}
+		}
+
+		.results__room-info {
+			padding: 1.5rem 3rem;
+		}
+
+		.results__price-info {
+			padding-left: 2.5rem;
+			span {
+				color: @dark-gray;
+			}
+		}
+
+		.results__availability {
+			font-size: 1.2rem;
+			padding: 0.3rem;
+			color: #ffffff;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+
+			&.isSold {
+				background: #da245c;
+			}
+		}
+	}
+	//end of image
+
+	.results__item__info {
+		margin: 2.8rem 0 0 4.8rem;
+	}
+
+	.main__info {
+		.flexbox();
+		.justify-content(space-between);
+
+		&__name,
+		&__price {
+			color: @dark-gray;
+		}
+
+		&__name {
+			font-size: 2.5rem;
+		}
+
+		&__price {
+			font-size: 2.1rem;
+		}
+	}
+
+	.main__description {
+		p {
+			color: @dark-gray;
+			font-size: 1.5rem;
+		}
+	}
+
+	.main__cta {
+		margin: 2rem 0 0 2rem;
+		button:last-child {
+			margin-left: 2rem;
+		}
+	}
+
+	.results__name {
+		padding: 1rem 2.5rem;
+		h1 {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+//theme orange 
+.theme--orange {
+	.results__bottom-info .btn-results-cta {
+		background: @orange-default;
+
+		svg {
+			fill: #ffffff;
+		}
+	}
+}
+
+//theme green
+.theme--green {
+	.results__bottom-info .btn-results-cta {
+		background: @green-default;
+
+		svg {
+			fill: #ffffff;
+		}
+	}
+}

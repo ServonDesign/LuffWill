@@ -1,5 +1,28 @@
 .hero {
 
+  &.hero-small {
+    .hero--container {
+      height: 23rem;
+
+      @media(min-width: @lg-min) {
+        height: 26rem;
+      }
+    }
+
+    .hero--image {
+      @media(min-width: @lg-min) {
+        height: 11.2rem;
+      }
+    }
+
+    .hero--container__tagline {
+      font-size: 3.4rem;
+      @media(min-width: @lg-min) {
+        font-size: 3.9rem;
+      }
+    }
+  }
+
   &--container {
     height: 188px;
     text-align: center;
@@ -36,29 +59,6 @@
     }
   }
 
-  // orange version
-  &.theme--orange {
-    background: #ed9f37;
-    background-size: 100% 100%;
-
-    @media(min-width: @md-min){
-      background: url(../imgs/hero-orange.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-  }
-
-  // green version
-  &.green-theme {
-    background: #afd469;
-    background-size: 100% 100%;
-
-    @media(min-width: @md-min){
-      background: url(../imgs/hero-green.jpg) no-repeat center;
-      background-size: cover;
-    }
-  }
-
   .hero--image {
     width: 100%;
     height: auto;
@@ -73,4 +73,24 @@
     }
   }
 
+}
+
+.theme--orange .hero {
+  background: #ed9f37;
+  background-size: 100% 100%;
+
+  @media(min-width: @md-min){
+    background: url(../imgs/hero-orange.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+
+.theme--green .hero {
+  background: #afd469;
+  background-size: 100% 100%;
+
+  @media(min-width: @md-min){
+    background: url(../imgs/hero-green.jpg) no-repeat center;
+    background-size: cover;
+  }
 }
