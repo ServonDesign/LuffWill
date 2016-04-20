@@ -1,0 +1,115 @@
+.map {
+
+	margin: 3.5rem 0 5rem;
+
+	@media(min-width: @lg-min) {
+		margin: 7.5rem 0 10rem;    
+	}
+
+	&--container {
+		.container();
+		.flex-direction(column);
+
+		padding: 0 1.5rem;
+
+		@media(min-width: @md-min) {
+			padding: 0 3rem;
+		}
+		    
+	}
+
+	&__control {
+		.flexbox();
+		.justify-content(center);
+		.flex-direction(column);
+		margin: 0 5rem;
+
+		@media(min-width: @md-min) {
+			.flex-direction(row);
+			margin: 0;
+		}
+
+		@media(min-width: @lg-min) {
+			.justify-content(end);
+			.flex-direction(row);
+			margin: 0;	    
+		}
+		    
+	}
+
+	h1 {
+		color: @orange-default;
+		.font-light;
+	}
+
+	.btn-map-all {
+		background: @lightest-gray;
+		color: @dark-gray;
+		fill: @dark-gray;
+	}
+
+	.btn-map-rent {
+		background: @green-light;
+	}
+
+	.btn-map-sell {
+		background: @orange-light;
+	}
+
+	.btn-map-rent,
+	.btn-map-sell {
+		color: #ffffff;
+		fill: #ffffff;
+	}
+
+	.map__bottom-title {
+		margin-top: 3.5rem;
+
+		@media(min-width: @lg-min) {
+			 margin-top: 7rem;   
+		}
+		    
+		h3 {
+			font-size: 2.2rem;
+		}
+	}
+
+	.map__bottom-content {
+		color: @dark-gray;
+		font-size: 1.4rem;
+
+		-webkit-column-count: 1;
+		     -moz-column-count: 1;
+		          column-count: 1;
+
+		  -webkit-column-gap: 30px;
+		     -moz-column-gap: 30px;
+		          column-gap: 30px;
+
+		@media(min-width: @md-min) {
+		 -webkit-column-count: 2;
+		     -moz-column-count: 2;
+		          column-count: 2;
+
+		  -webkit-column-gap: 30px;
+		     -moz-column-gap: 30px;
+		          column-gap: 30px;
+		}
+
+		  @media(min-width: @lg-min) {
+		    -webkit-column-count: 3;
+		       -moz-column-count: 3;
+		            column-count: 3;
+
+		    -webkit-column-gap: 23px;
+		       -moz-column-gap: 23px;
+		            column-gap: 23px;
+		  }
+
+		.contact-rent,
+		.contact-sales {
+			font-size: 1.8rem;
+		}
+	}
+
+}
