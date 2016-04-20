@@ -1,0 +1,152 @@
+.testimonials {
+
+	margin: 3.5rem 0 5rem;
+	padding: 0 1.5rem;
+
+	@media(min-width: @md-min) {
+		padding: 0 3rem;;
+	}
+
+	@media(min-width: @lg-min) {
+		margin: 7.5rem 0 10rem;    
+	}
+	    
+	    
+
+	&--container {
+		.container();
+
+		h1 {
+			.font-light;
+			margin-bottom: 5rem;
+		}
+
+		.testimonials__item {
+			margin-bottom: 2rem;
+		}
+
+		.testimonials__from {
+			font-size: 1.8rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.testimonials__message {
+			p {
+				font-size: 1.6rem;
+				color: @dark-gray;
+			}
+		}
+	}
+
+}
+
+.testimonials__content-block {
+	.flexbox();
+	.flex-wrap(wrap); 
+
+	@media(min-width: @lg-min) {
+		.flex-wrap(nowrap);
+		margin-right: 3rem;    
+	}
+	    
+}
+
+.testimonials--list {
+	width: 100%;
+	margin: 0 0 3rem;
+
+	@media(min-width: @lg-min) {
+		width: auto;
+		margin: 0;    
+	}
+}
+
+.testimonials__sidebar {
+	width: 100%;
+	color: @dark-gray;
+
+	@media(min-width: @lg-min) {
+		width: 35%;
+		margin-left: 3rem;    
+	}
+	    
+	.company-office {
+
+		&__branch,
+		&__phone,
+		&__fax {
+			display: block;
+			font-size: 1.3rem;
+		}
+
+		&__branch {}
+		&__phone,
+		&__fax {
+			svg {
+				width: 1.6rem;
+				height: 1.6rem;
+				fill: @gray;
+				margin-right: 0.5rem;
+			}
+		}
+		&__phone {
+			font-size: 2.2rem;
+		}
+	}
+
+	.company-address,
+	.company-contact,
+	.company-office {
+		font-size: 1.3rem;
+		margin: 0 0 2rem 0;
+	}
+
+	.company__email {
+		margin: 0 0 1rem 0;
+
+		svg {
+			width: 1.6rem;
+			height: 1.6rem;
+			fill: @gray;
+			margin-right: 0.5rem;
+		}
+	}
+}
+
+.theme--orange {
+	.testimonials {
+		h1,
+		.testimonials__from,
+		.company-office__phone {
+			color: @orange-default;
+		}
+	}
+
+	.testimonials--list {
+		border-bottom: 1px solid @orange-default;
+
+		@media(min-width: @lg-min) {
+			border-right: 1px solid @orange-default;
+			border-bottom: 0;	    
+		}    
+	}
+}
+
+.theme--green {
+	.testimonials {
+		h1,
+		.testimonials__from,
+		.company-office__phone {
+			color: @green-default;
+		}
+	}
+
+	.testimonials--list {
+		border-bottom: 1px solid @green-default;
+
+		@media(min-width: @lg-min) {
+			border-right: 1px solid @green-default;
+			border-bottom: 0;	    
+		}     
+	}
+}
