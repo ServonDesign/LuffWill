@@ -5,6 +5,7 @@ var modal = () => {
   var $modal = $("#modal-container"),
 
   init = () => {
+
     $('.subscribe--icon').on('click', () => {
       $modal.addClass('isActive');
       $('.backdrop').addClass('isActive');

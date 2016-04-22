@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="resources/css/main.css" />
 
 </head>
-<body class="theme--orange">
+<body class="theme--default">
 
 	<div class="svg-sprite">
 		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="hide"><symbol id="arrow-left" viewBox="0 0 16 16">
@@ -1237,7 +1237,7 @@
 		</g></symbol></svg>
 	</div>
 
-	<div class="header theme--orange">
+	<div class="header">
 		<div class="header--container">
 			<div class="header--btn__search hide-min-lg">
 	      <button><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-menu"></use></svg></button>
@@ -1306,70 +1306,79 @@
 	</div>
 
 	<div class="side-search hide-min-lg">
-	  <div class="search-filter--container">
-	    <div class="radio--group">
-	        <div class="radio radio--buy">
-	            <label>
-	                <span class="font-bold font-white">Buy</span>
-	                <input type="radio" name="side-search-choice" value="buy" checked="checked"><label></label>
-	            </label>
-	        </div>
-	        <div class="radio radio--sell">
-	            <label>
-	                <span class="font-bold font-white">Rent</span>
-	                <input type="radio" name="side-search-choice" value="sell"><label></label>
-	            </label>
-	        </div>
-	    </div>
-	    <div class="search-filter--form">
-	      <form action="#" class="theme--green">
-	        <div class="search-filter--range__label">price range:</div>
+		<div class="search-filter--container">
+			<div class="radio--group">
+					<div class="radio radio--buy">
+						<label>
+								<span class="font-orange">Buy</span>
+								<input type="radio" name="choice" value="buy" class="radio-buy"><label></label>
+						</label>
+					</div>
+					<div class="radio radio--sell">
+						<label>
+								<span class="font-green">Rent</span>
+								<input type="radio" name="choice" value="rent" class="radio-rent"><label></label>
+						</label>
+					</div>
+			</div>
+			<div class="search-filter--form">
+				<form action="#">
+					<div class="search-filter--range__label font-white">price range:</div>
 
-	        <div class="slider--value">
-	          <div id="slider-snap-value-lower-search" class="font-bold"></div>
-	          <span>to</span>
-	          <div id="slider-snap-value-upper-search" class="font-bold"></div>
-	        </div>
+					<div class="slider--value">
+						<div id="slider-snap-value-lower-search" class="font-bold font-white"></div>
+						<span class="font-white">to</span>
+						<div id="slider-snap-value-upper-search" class="font-bold font-white"></div>
+					</div>
 
-	        <div id="slider1"></div>
+					<div id="slider1"></div>
 
-	        <div class="bn-form-group">
-	          <input type="text" placeholder="Country/Town/Postcode">
-	        </div>
-	        <button class="btn">
-	            <span>Search</span>
-	            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use></svg>
-	        </button>
-	      </form>
-	    </div>
-	    <div class="search-filter--map">
-	      <button class="btn">
-	        <span>Map Search</span>
-	        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use></svg>
-	      </button>
-	    </div>
+					<div class="bn-form-group">
+						<input type="text" placeholder="Country/Town/Postcode">
+					</div>
+					<button class="btn">
+							<span>Search</span>
+							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use></svg>
+					</button>
+				</form>
+			</div>
+			<div class="search-filter--map">
+				<button class="btn">
+					<span>Map Search</span>
+					<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use></svg>
+				</button>
+			</div>
 
-	  </div>
+		</div>
 	</div>
 
 
 	<section class="hero hero-small">
-	  <div class="hero--container">
-	    <div class="hero--container__logo">
-	      <img src="./resources/imgs/LW-logo-white-01.svg" alt="Luff and Wilkin" class="hero--image">
-	    </div>
-	    <div class="hero--container__tagline">looking to buy?</div>
-	  </div>
-	</section>
+		<div class="hero--container">
+			<div class="hero--container__default">
+				<div class="hero--container__logo hero__logo--default">
+					<img src="./resources/imgs/LW-logo-white-01.svg" alt="Luff and Wilkin" class="hero--image">
+					<img src="./resources/imgs/L-logo-white-01.svg" alt="Luff Associates" class="hero--image">
+				</div>
+				<div class="hero--container__tagline">looking to rent?</div>
+			</div>
 
-	<!-- <section class="hero green-theme">
-	  <div class="hero--container">
-	    <div class="hero--container__logo">
-	      <img src="./resources/imgs/L-logo-white-01.svg" alt="Luff Associates" class="hero--image">
-	    </div>
-	    <div class="hero--container__tagline">looking to rent?</div>
-	  </div>
-	</section> -->
+			<div class="hero--container__buy">
+				<div class="hero--container__logo hero__logo--buy">
+					<img src="./resources/imgs/LW-logo-white-01.svg" alt="Luff and Wilkin" class="hero--image">
+				</div>
+				<div class="hero--container__tagline">looking to buy?</div>
+			</div>
+
+			<div class="hero--container__rent">
+				<div class="hero--container__logo hero__logo--rent">
+					<img src="./resources/imgs/L-logo-white-01.svg" alt="Luff Associates" class="hero--image">
+				</div>
+				<div class="hero--container__tagline">looking to rent?</div>
+			</div>
+		</div>
+
+	</section>
 
 	<section class="search-filter hide-max-md">
 	  <div class="search-filter--container">
@@ -1377,13 +1386,13 @@
 			    <div class="radio radio--buy">
 			        <label>
 			            <span class="font-orange">Buy</span>
-			            <input type="radio" name="choice" value="first" checked="checked"><label></label>
+			            <input type="radio" name="choice" value="buy" class="radio-buy"><label></label>
 			        </label>
 			    </div>
 			    <div class="radio radio--sell">
 			        <label>
 			            <span class="font-green">Rent</span>
-			            <input type="radio" name="choice" value="second"><label></label>
+			            <input type="radio" name="choice" value="rent" class="radio-rent"><label></label>
 			        </label>
 			    </div>
 			</div>
@@ -1649,11 +1658,19 @@
 	</section>
 
 	<footer class="footer">
-	  <div class="footer--container">
+		<div class="footer--container">
 			<div class="footer--container__logo hide-min-md">
-				<div class="footer__logos">
-					<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
-					<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
+				<div class="footer--container__logo">
+					<div class="footer__logos footer__logos--default">
+						<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
+						<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
+					</div>
+					<div class="footer__logos footer__logos--buy">
+						<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
+					</div>
+					<div class="footer__logos footer__logos--rent">
+						<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
+					</div>
 				</div>
 			</div>
 			<div class="footer--container__nav">
@@ -1678,7 +1695,7 @@
 					<li class="footer--nav__item-social"><a href="#instagram"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
 					<li class="footer--nav__item-social"><a href="#googleplus"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googleplus"></use></svg></a></li>
 				</ul>
-	    </div>
+			</div>
 		</div>
 
 		<div class="isMobile hide-min-md">
@@ -1700,19 +1717,19 @@
 			</div>
 			<div class="footer--container">
 				<div class="footer--container__nav">
-		      <ul class="footer--nav footer--nav__social">
-		        <li class="footer--nav__item-social"><a href="#facebook"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
-		        <li class="footer--nav__item-social"><a href="#pinterest"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></a></li>
-		        <li class="footer--nav__item-social"><a href="#twitter"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
-		        <li class="footer--nav__item-social"><a href="#vimeo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vimeo"></use></svg></a></li>
-		        <li class="footer--nav__item-social"><a href="#instagram"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
-		        <li class="footer--nav__item-social"><a href="#googleplus"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googleplus"></use></svg></a></li>
-		      </ul>
+					<ul class="footer--nav footer--nav__social">
+						<li class="footer--nav__item-social"><a href="#facebook"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+						<li class="footer--nav__item-social"><a href="#pinterest"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></a></li>
+						<li class="footer--nav__item-social"><a href="#twitter"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+						<li class="footer--nav__item-social"><a href="#vimeo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vimeo"></use></svg></a></li>
+						<li class="footer--nav__item-social"><a href="#instagram"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
+						<li class="footer--nav__item-social"><a href="#googleplus"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googleplus"></use></svg></a></li>
+					</ul>
 					<div class="footer--copyright">
-		        <p class="font-bold">© Luff & Wilkin - Property Specialists 2016</p>
-		        <p>Website design & build by <a href="#" class="font-orange">Servon Design Ltd</a></p>
-		      </div>
-		    </div>
+						<p class="font-bold">© Luff & Wilkin - Property Specialists 2016</p>
+						<p>Website design & build by <a href="#" class="font-orange">Servon Design Ltd</a></p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="isTablet hide-min-lg hide-max-sm">
@@ -1728,28 +1745,36 @@
 					</div>
 					<div class="footer__names font-light">
 						<div>tel:<a href="#" class="font-orange">01252 838899</a></div>
-	 					<div>fax:<a href="" class="font-orange">01252 838858</a></div>
+						<div>fax:<a href="" class="font-orange">01252 838858</a></div>
 						<p><span class="font-bold">Mr David Wilkin</span> (Director)</p>
 						<p><span class="font-bold">Mrs Mary Luff</span> (Director)</p>
 					</div>
 					<div class="footer__copyright">
 						<ul class="footer--nav footer--nav__social">
-			        <li class="footer--nav__item-social"><a href="#facebook"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
-			        <li class="footer--nav__item-social"><a href="#pinterest"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></a></li>
-			        <li class="footer--nav__item-social"><a href="#twitter"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
-			        <li class="footer--nav__item-social"><a href="#vimeo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vimeo"></use></svg></a></li>
-			        <li class="footer--nav__item-social"><a href="#instagram"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
-			        <li class="footer--nav__item-social"><a href="#googleplus"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googleplus"></use></svg></a></li>
-			      </ul>
-		        <p class="font-bold">© Luff & Wilkin - Property Specialists 2016 <span></span></p>
-		        <p>Website design & build by <a href="#" class="font-orange">Servon Design Ltd</a></p>
+							<li class="footer--nav__item-social"><a href="#facebook"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+							<li class="footer--nav__item-social"><a href="#pinterest"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></a></li>
+							<li class="footer--nav__item-social"><a href="#twitter"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+							<li class="footer--nav__item-social"><a href="#vimeo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vimeo"></use></svg></a></li>
+							<li class="footer--nav__item-social"><a href="#instagram"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
+							<li class="footer--nav__item-social"><a href="#googleplus"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googleplus"></use></svg></a></li>
+						</ul>
+						<p class="font-bold">© Luff & Wilkin - Property Specialists 2016 <span></span></p>
+						<p>Website design & build by <a href="#" class="font-orange">Servon Design Ltd</a></p>
+
 						<div class="footer--container__logo">
-							<div class="footer__logos">
+							<div class="footer__logos footer__logos--default">
 								<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
 								<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
 							</div>
+							<div class="footer__logos footer__logos--buy">
+								<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
+							</div>
+							<div class="footer__logos footer__logos--rent">
+								<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
+							</div>
 						</div>
-		      </div>
+
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1765,7 +1790,7 @@
 					<div class="footer__contacts font-light">
 						<a href="#" class="font-orange">info@luffandwilkin.co.uk</a>
 						<div>tel:&nbsp;<a href="#" class="font-orange">01252 838899</a></div>
-	 					<div>fax:&nbsp;<a href="" class="font-orange">01252 838858</a></div>
+						<div>fax:&nbsp;<a href="" class="font-orange">01252 838858</a></div>
 					</div>
 
 					<div class="footer__names">
@@ -1776,17 +1801,26 @@
 				</div>
 				<div class="footer--container__copyright">
 					<p><span class="font-bold">© Luff & Wilkin - Property Specialists 2016</span> | Website design & build by <a href="#" class="font-orange">Servon Design Ltd</a></p>
+
 					<div class="footer--container__logo">
-						<div class="footer__logos">
+						<div class="footer__logos footer__logos--default">
 							<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
 							<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
 						</div>
+						<div class="footer__logos footer__logos--buy">
+							<img src="./resources/imgs/L-logo-green-01.svg" alt="Luff & Wilkin">
+						</div>
+						<div class="footer__logos footer__logos--rent">
+							<img src="./resources/imgs/LW-logo-colour-01.svg" alt="Luff & Wilkin">
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 
 	</footer>
+
 
 	<div id="modal-container" class="modal-subscription">
 		<div class="subscribe--form-container">

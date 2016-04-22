@@ -7,6 +7,7 @@ var rangeSlider = () => {
       snapSlider1 = document.getElementById('slider1'),
 
   init = () => {
+    
     noUiSlider.create(snapSlider, {
       start: [ 250000, 750000 ],
 

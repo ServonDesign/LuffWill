@@ -1,5 +1,5 @@
 .details {
-
+  overflow: hidden;
   &--container {
     .container();
     .flex-direction(column);
@@ -370,7 +370,8 @@
 }
 
 //green theme styles
-.theme--green .details {
+.theme--green .details,
+.theme--default .details {
 
   .link-back {
     color: @green-default;

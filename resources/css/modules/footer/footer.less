@@ -1,4 +1,5 @@
 .footer {
+  overflow: hidden;
   background: #f1f8e5;
   padding: 0 15px;
 
@@ -228,4 +229,35 @@
     }
   }
 
+}
+
+.theme--default {
+  .footer__logos--default {
+    display: flex;
+  }
+
+  .footer__logos--buy,
+  .footer__logos--rent {
+    display: none;
+  }
+}
+.theme--orange {
+  .footer__logos--buy {
+      display: flex;
+  }
+
+  .footer__logos--default,
+  .footer__logos--rent {
+    display: none;
+  }
+}
+.theme--green {
+  .footer__logos--rent {
+      display: flex;
+  }
+
+  .footer__logos--default,
+  .footer__logos--buy {
+    display: none;
+  }
 }

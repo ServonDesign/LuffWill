@@ -1,4 +1,5 @@
 .hero {
+  overflow: hidden;
 
   &.hero-small {
     .hero--container {
@@ -12,6 +13,8 @@
     .hero--image {
       @media(min-width: @lg-min) {
         height: 11.2rem;
+        max-width: 12.6rem;
+        margin: 0 1.5rem;
       }
     }
 
@@ -32,11 +35,11 @@
     .align-items(center);
 
     @media(min-width: @md-min){
-      height: 340px;
+      height: 34rem;
     }
 
     @media(min-width: @lg-min){
-      height: 596px;
+      height: 59.6rem;
     }
   }
 
@@ -48,49 +51,101 @@
   .hero--container__tagline {
     font-family: 'Aileron Light';
     color: #ffffff;
-    font-size: 38px;
+    font-size: 3.8rem;
 
     @media(min-width: @md-min){
-      font-size: 75px;
+      font-size: 7.5rem;
     }
 
     @media(min-width: @lg-min){
-      font-size: 121px;
+      font-size: 12rem;
     }
   }
 
   .hero--image {
     width: 100%;
     height: auto;
-    max-width: 80px;
+    max-width: 8rem;
+    margin: 0 3rem;
+    display: inline-block;
 
     @media(min-width: @md-min){
-      max-width: 120px;
+      max-width: 12rem;
     }
 
     @media(min-width: @lg-min){
-      max-width: 200px;
+      max-width: 20rem;
     }
   }
 
 }
 
-.theme--orange .hero {
-  background: #ed9f37;
-  background-size: 100% 100%;
+.theme--default {
+  .hero--container__buy,
+  .hero--container__rent {
+    display: none;
+  }
 
-  @media(min-width: @md-min){
-    background: url(../imgs/hero-orange.jpg) no-repeat center;
-    background-size: cover;
+  .hero--container__default {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero {
+    background: #afd469;
+    background-size: 100% 100%;
+
+    @media(min-width: @md-min){
+      background: url(../imgs/hero-green.jpg) no-repeat center;
+      background-size: cover;
+    }
   }
 }
 
-.theme--green .hero {
-  background: #afd469;
-  background-size: 100% 100%;
+.theme--orange {
 
-  @media(min-width: @md-min){
-    background: url(../imgs/hero-green.jpg) no-repeat center;
-    background-size: cover;
+  .hero--container__default,
+  .hero--container__rent {
+    display: none;
   }
+
+  .hero--container__buy {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero {
+    background: #ed9f37;
+    background-size: 100% 100%;
+
+    @media(min-width: @md-min){
+      background: url(../imgs/hero-orange.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+
+}
+
+.theme--green {
+
+  .hero--container__default,
+  .hero--container__buy {
+    display: none;
+  }
+
+  .hero--container__rent {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero {
+    background: #afd469;
+    background-size: 100% 100%;
+
+    @media(min-width: @md-min){
+      background: url(../imgs/hero-green.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+
 }

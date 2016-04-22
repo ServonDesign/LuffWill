@@ -5,6 +5,7 @@ import {sum, square, MyClass} from "./import";
 import {navigation, sideSearch} from "./navigation";
 import {rangeSlider} from "./rangeSlider";
 import {modal} from "./modal";
+import {themeSwitch} from "./themeSwitch";
 
 $(document).ready(init);
 
@@ -36,4 +37,5 @@ function runImportedFunctions(){
 		sideSearch();
 		rangeSlider();
 		modal();
+		themeSwitch();
 }

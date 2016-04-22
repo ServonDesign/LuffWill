@@ -20,9 +20,10 @@ var gulp 								= require('gulp'),
     merge  							= require('merge-stream'),
     assign 							= require('lodash.assign')
     gutil 							= require('gulp-util'),
-    chalk 							= require('chalk');
-		svgstore 						= require('gulp-svgstore');
-		cheerio							= require('gulp-cheerio');
+    chalk 							= require('chalk'),
+		svgstore 						= require('gulp-svgstore'),
+		cheerio							= require('gulp-cheerio'),
+		autoprefixer 				= require('gulp-autoprefixer');
 
 
 gulp.task('less', function(){
@@ -30,6 +31,10 @@ gulp.task('less', function(){
 		.pipe(sourcemaps.init())
 		.pipe(less({
 			plugins: [cleancss]
+		}))
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
 		}))
 		.on('error', map_error)
 		.pipe(sourcemaps.write('.'))

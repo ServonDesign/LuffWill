@@ -1,15 +1,15 @@
 .side-nav {
-
+  overflow: hidden;
   background: #add365;
   transition: 0.3s all ease-in-out;
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 100%;
   right: -100%;
   z-index: 1;
 
   @media(min-width: @md-min) {
-    width: 50%;
+    width: 0%;
     top: 6.0rem;
     right: -50%;
     bottom: 0;
@@ -17,6 +17,12 @@
 
   &.isOpen {
     right: 0;
+    width: 100%;
+
+    @media(min-width: @md-min) {
+      width: 50%;
+    }
+
   }
 
   a {

@@ -1,5 +1,5 @@
 .secondary {
-
+	overflow: hidden;
 	margin: 3.5rem 0 5rem;
 	padding: 0 1.5rem;
 
@@ -8,7 +8,7 @@
 	}
 
 	@media(min-width: @lg-min) {
-		margin: 7.5rem 0 10rem;    
+		margin: 7.5rem 0 10rem;
 	}
 
 	&--container {
@@ -23,12 +23,12 @@
 
 	.secondary__content-block {
 		.flexbox();
-		.flex-wrap(wrap); 
+		.flex-wrap(wrap);
 
 		@media(min-width: @lg-min) {
-			.flex-wrap(nowrap);   
+			.flex-wrap(nowrap);
 		}
-		    
+
 	}
 
 	.secondary__content--list {
@@ -36,7 +36,7 @@
 		margin: 0 0 3rem;
 
 		@media(min-width: @lg-min) {
-			margin: 0;    
+			margin: 0;
 		}
 
 		.secondary__content__item {
@@ -72,12 +72,13 @@
 
 		@media(min-width: @lg-min) {
 			border-right: 1px solid @orange-default;
-			border-bottom: 0;	    
-		}    
+			border-bottom: 0;
+		}
 	}
 }
 
-.theme--green {
+.theme--green,
+.theme--default {
 	.secondary {
 		h1,
 		.item__title,
@@ -91,7 +92,7 @@
 
 		@media(min-width: @lg-min) {
 			border-right: 1px solid @green-default;
-			border-bottom: 0;	    
-		}     
+			border-bottom: 0;
+		}
 	}
 }

@@ -1,7 +1,6 @@
 .search-filter {
-
+  overflow: hidden;
   background: #fefefe;
-  border-bottom: 1px solid #fbdcb2;
 
   &--container {
     .container();
@@ -11,9 +10,6 @@
   }
 
   &--form {
-
-    border-right: 1px solid #fbdcb2;
-    border-left: 1px solid #fbdcb2;
     height: 100%;
     margin: 0 20px;
     width: 750px;
@@ -94,6 +90,18 @@
 
 //orange theme
 .theme--orange {
+
+  .search-filter {
+    border-bottom: 1px solid @orange-lightest;
+
+    &--form {
+
+      border-right: 1px solid @orange-lightest;
+      border-left: 1px solid @orange-lightest;
+
+    }
+  }
+
   form.theme--orange {
     #slider-snap-value-lower,
     #slider-snap-value-upper {
@@ -121,7 +129,20 @@
 }
 
 //green theme
-.theme--green {
+.theme--green,
+.theme--default {
+
+  .search-filter {
+    border-bottom: 1px solid @green-lightest;
+
+    &--form {
+
+      border-right: 1px solid @green-lightest;
+      border-left: 1px solid @green-lightest;
+
+    }
+  }
+
   form.theme--orange {
     #slider-snap-value-lower,
     #slider-snap-value-upper {
