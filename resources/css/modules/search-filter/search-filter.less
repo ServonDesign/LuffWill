@@ -43,16 +43,18 @@
   #slider-snap-value-lower,
   #slider-snap-value-upper {
     font-family: 'Aileron Bold';
+    width: 100px;
   }
 
   &--map {
-
     .btn {
       .flexbox();
+      display: -moz-box;
+
     }
     svg {
-      width: 24px;
-      height: 24px;
+      width: 1.6rem;
+      height: 1.6rem;
       margin-left: 5px;
     }
   }
@@ -68,21 +70,31 @@
   }
 
   .btn {
-    background: @dark-gray;
+    background: @gray;
     color: #ffffff;
     font-size: 1.4rem;
+    .align-items(center);
   }
 
   .btn--icon {
     fill: #ffffff;
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
     position: relative;
+    padding-top: 0.2rem;
 
     svg {
-      height: inherit;
-      width: inherit;
+      width: 2rem;
+      height: 2rem;
     }
+  }
+
+  .font-orange {
+    color: @orange-light;
+  }
+
+  .font-green {
+    color: @green-light;
   }
 
 }
@@ -137,8 +149,10 @@
 
     &--form {
 
-      border-right: 1px solid @green-lightest;
-      border-left: 1px solid @green-lightest;
+      @media(min-width: @lg-min) {
+        border-right: 1px solid @green-lightest;
+        border-left: 1px solid @green-lightest;
+      }
 
     }
   }
@@ -152,7 +166,7 @@
     input,
     input::-webkit-input-placeholder,
     .search-filter--range__label {
-      color: @green-default;
+      color: @green-light;
     }
 
     .noUi-connect,

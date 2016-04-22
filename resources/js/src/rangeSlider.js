@@ -1,5 +1,6 @@
 import $ from "./../vendor/jquery/dist/jquery";
 import noUiSlider from "./../vendor/noUiSlider/nouislider";
+import wNumb from "./../vendor/wNumb/wNumb";
 
 var rangeSlider = () => {
 
@@ -7,11 +8,12 @@ var rangeSlider = () => {
       snapSlider1 = document.getElementById('slider1'),
 
   init = () => {
-    
+
     noUiSlider.create(snapSlider, {
       start: [ 250000, 750000 ],
 
       connect: true,
+      step: 50000,
       range: {
         'min': 0,
         'max': 1000000
@@ -19,13 +21,15 @@ var rangeSlider = () => {
     });
 
     noUiSlider.create(snapSlider1, {
-      start: [ 250000, 750000 ],
+      start: [ 0, 750000 ],
 
       connect: true,
+      step: 50000,
       range: {
         'min': 0,
         'max': 1000000
       }
+
     });
 
 
