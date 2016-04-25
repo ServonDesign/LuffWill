@@ -84,7 +84,6 @@
     @media(min-width: @sm-min) {
       .justify-content(end);
     }
-
   }
 
   &--container__logo {
@@ -110,7 +109,7 @@
     }
 
     .footer--nav__social {
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
     }
 
     .footer--nav {
@@ -242,6 +241,10 @@
     height: 1.6rem;
     margin-left: 2rem;
 
+    &:first-child {
+      margin-left: 0;
+    }
+
     svg {
       width: 1.6rem;
       height: 1.6rem;
@@ -305,10 +308,11 @@
     width: 100%;
     .flexbox();
     .justify-content(center);
-    margin: 3.4rem 0;
+    margin: 3.4rem 0 1.5rem;
 
     @media(min-width: @md-min) {
       .justify-content(start);
+      margin: 3.4rem 0;
     }
 
     img {
