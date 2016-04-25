@@ -103,7 +103,10 @@
     }
 
     .featured__price {
-      padding: 0 2.2rem;
+      padding: 0 1.1rem;
+      @media(min-width: @lg-min) {
+        padding: 0 2.2rem;
+      }
     }
   }
 
@@ -150,18 +153,19 @@
   .featured__icon {
     width: 16rem;
     height: 16rem;
-    background: rgba(255,255,255, 0.8);
+    background: rgba(255,255,255, 0.82);
     position: absolute;
     top: -80px;
     right: -80px;
     border-radius: 50%;
+    z-index: 1;
 
     svg {
       width: 3rem;
       height: 3rem;
       position: relative;
       top: 9.5rem;
-      left: 3.0rem;
+      left: 3.5rem;
       fill: none;
       cursor: pointer;
     }
