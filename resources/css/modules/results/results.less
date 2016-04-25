@@ -164,9 +164,15 @@
 	}
 
 	.results__name {
-		padding: 1rem 2.5rem;
+		padding: 0 2.5rem;
+
+		@media(min-width: @lg-min) {
+			padding: 1rem 2.5rem;
+		}
+
 		h1 {
 			font-size: 1.8rem;
+			margin: 2.5rem 0;
 		}
 	}
 }
