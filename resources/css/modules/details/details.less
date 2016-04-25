@@ -160,10 +160,23 @@
     }
 
     .details__sidebtn {
+
+      width: 100%;
+
+      @media(min-width: @sm-min) {
+        width: auto;
+      }
+
       .btn {
         position: relative;
         display: block;
         margin-bottom: 1.5rem;
+
+        width: 100%;
+
+        @media(min-width: @sm-min) {
+          width: auto;
+        }
 
         @media(min-width: @lg-min) {
           display: none;
@@ -399,6 +412,11 @@
     margin-bottom: 4rem;
   }
 
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+
+  @media(min-width: @sm-min) {
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
@@ -406,6 +424,7 @@
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  }
 
   @media(min-width: @lg-min) {
     -webkit-column-count: 3;

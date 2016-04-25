@@ -25,19 +25,16 @@
 
 	&__control {
 		.flexbox();
-		.justify-content(center);
+		.justify-content(end);
 		.flex-direction(column);
-		margin: 0 5rem;
 		width: 100%;
 
-		@media(min-width: @md-min) {
+		@media(min-width: @sm-min) {
 			.flex-direction(row);
-			margin: 0;
 		}
 
-		@media(min-width: @lg-min) {
+		@media(min-width: @md-min) {
 			.justify-content(end);
-			.flex-direction(row);
 			margin: 0;
 		}
 
