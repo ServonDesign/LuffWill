@@ -1,6 +1,11 @@
 .sidebar{
 	.base-column-m();
-	padding-left: calc(16.666667% ~" -" (19px + @column-gutter-half));
+	padding-left: 0;
+
+	@media(min-width: @lg-min) {
+		padding-left: calc(16.666667% ~" -" (19px + @column-gutter-half));
+	}
+
 
 	& + &{
 		margin-top: 50px;
