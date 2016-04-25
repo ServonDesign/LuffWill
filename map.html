@@ -12,7 +12,7 @@
 	<!-- Useful Metas
 	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 
 	<!-- CSS
 	================================================== -->
@@ -2430,9 +2430,9 @@
 				</button>
 			</div>
 		</div>
-		<div class="map__image">
+		<div id="map" class="map__image">
 			<!-- placeholder -->
-			<img src="./resources/imgs/map-place-holder.jpg" alt="placeholder">
+			<!-- <img src="./resources/imgs/map-place-holder.jpg" alt="placeholder"> -->
 		</div>
 		<div class="map--container">
 			<div class="map__bottom-title">
@@ -2657,6 +2657,19 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget ur
 
 	<!-- scripts
 	================================================== -->
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="resources/js/dist/main.min.js"></script>
+
+	<script>
+		function initMap() {
+			var mapDiv = document.getElementById('map');
+			var map = new google.maps.Map(mapDiv, {
+				center: {lat: 44.540, lng: -78.546},
+				zoom: 8
+			});
+		}
+
+		initMap();
+	</script>
 </body>
 </html>

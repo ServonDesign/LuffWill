@@ -79,7 +79,7 @@
 		}
 
 		.results__bottom-info {
-			background: rgba(255,255,255, 0.7);
+			background: rgba(255,255,255, 0.9);
 			width: 100%;
 			position: absolute;
 			bottom: 0;
@@ -184,6 +184,17 @@
 
 //theme green
 .theme--green {
+	.results__bottom-info .btn-results-cta {
+		background: @green-default;
+
+		svg {
+			fill: #ffffff;
+		}
+	}
+}
+
+.theme--green,
+.theme--default {
 	.results__bottom-info .btn-results-cta {
 		background: @green-default;
 
