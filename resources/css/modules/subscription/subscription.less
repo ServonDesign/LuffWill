@@ -37,6 +37,13 @@
       text-align: left;
       padding: 0;
     }
+
+    & > span {
+      display: block;
+      @media(min-width: @lg-min) {
+        display: inline-block;
+      }
+    }
   }
 
   &--form-container {

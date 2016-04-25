@@ -23,8 +23,8 @@
 	}
 
 	.view-render {
-		& > * {
-			//margin: 0 10px 0 0;
+		.btn {
+			padding: 0.6rem;
 		}
 	}
 
@@ -81,4 +81,9 @@
   	li.isSelected {
   		background: @green-default;
   	}
+}
+
+select:before {
+	content: "a";
+	display: inline-block;
 }

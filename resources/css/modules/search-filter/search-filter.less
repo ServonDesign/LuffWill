@@ -49,14 +49,26 @@
   &--map {
     //margin-top:
     .btn {
-      .flexbox();
-      display: -moz-box;
+      // .flexbox();
+      // display: -moz-box;
+      display: inline-block;
+      vertical-align: middle;
 
+      & > span {
+        float: left;
+        display: inline-block;
+        overflow: hidden;
+        text-align: left;
+      }
     }
     svg {
       width: 1.6rem;
       height: 1.6rem;
-      margin-left: 5px;
+      margin-left: 0.5rem;
+      top: 50%;
+      margin-top: -2px;
+      vertical-align: middle;
+      display: inline-block;
     }
   }
 
@@ -87,6 +99,16 @@
     svg {
       width: 2rem;
       height: 2rem;
+    }
+  }
+
+  .search-filter--form {
+    .btn {
+      svg {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0;
+      }
     }
   }
 

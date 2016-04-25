@@ -115,15 +115,19 @@
 
   .btn {
     .flexbox();
+    .justify-content(center);
+    .align-items(center);
+    padding: 0.6rem 1.8rem;
     margin: 0;
     background: #818181;
     color: #ffffff;
     border: none;
+    width: 14.5rem;
 
     svg {
-      width: 24px;
-      height: 24px;
-      margin-left: 5px;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-left: 0.5rem;
       fill: #ffffff;
     }
   }
@@ -140,6 +144,21 @@
       width: inherit;
     }
   }
+
+  label > span {
+    color: #ffffff;
+  }
+
+  input {
+    padding: 1.6rem;
+  }
+
+  .noUi-connect {
+    background: #cee4a3;
+  }
+  .noUi-handle {
+    background: @green-dark;
+  }
 }
 
 //orange theme
@@ -147,6 +166,7 @@
   .bn-form-group > input,
   .bn-form-group > input::-webkit-input-placeholder {
     color: @orange-default;
+    font-size: 1.6rem;
   }
 }
 //green theme
@@ -155,5 +175,6 @@
   .bn-form-group > input,
   .bn-form-group > input::-webkit-input-placeholder {
     color: @green-default;
+    font-size: 1.6rem;
   }
 }
