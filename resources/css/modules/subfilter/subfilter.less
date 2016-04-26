@@ -12,6 +12,25 @@
 		.flexbox();
 	}
 
+	.quantity-filter {
+		padding: 0;
+		position: relative;
+
+		& > select {
+			border: 0;
+    	padding: 0.6rem 3rem 0.6rem 1.2rem;
+			position: relative;
+			z-index: 2;
+			background: transparent;
+		}
+
+		& > svg {
+			position: absolute;
+			right: 1.2rem;
+			top: 1.6rem;
+		}
+	}
+
 	.main-filter {
 		& > * {
 			margin: 0 20px 0 0;
@@ -44,6 +63,10 @@
 		color: @orange-default;
 	}
 
+	.quantity-filter select {
+		color: @orange-default;
+	}
+
 	.link-prev,
 	.link-next {
 		color: @orange-default;
@@ -62,6 +85,10 @@
 .theme--green,
 .theme--default {
 	.view-render--label {
+		color: @green-default;
+	}
+
+	.quantity-filter select {
 		color: @green-default;
 	}
 
