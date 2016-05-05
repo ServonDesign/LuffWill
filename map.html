@@ -8802,7 +8802,7 @@
 	<!-- testimonials content -->
 	<section class="map">
 		<div class="map--container">
-			<h1>Find a property.. to <span class="font-green">rent</span> or to <span class="font-bold">buy</span></h1>
+			<h1>Find a property.. to <span class="font-green font-bold">rent</span> or to <span class="font-bold">buy</span></h1>
 			<div class="map__control">
 				<button class="btn btn-map-cta btn-map-all">
 					<span>All Properties</span>
@@ -9184,7 +9184,9 @@
 			};
 			var map = new google.maps.Map(document.getElementById('map'), {
 				zoom: 12,
-				center: sample
+				center: sample,
+				draggable: false,
+     			scrollwheel: false,
 			});
 
 			// This event listener calls addMarker() when the map is clicked.

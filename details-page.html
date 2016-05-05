@@ -9696,7 +9696,9 @@
 			};
 			var map = new google.maps.Map(document.getElementById('map_details'), {
 				zoom: 12,
-				center: sample
+				center: sample,
+				draggable: false,
+     			scrollwheel: false,
 			});
 
 			// This event listener calls addMarker() when the map is clicked.
