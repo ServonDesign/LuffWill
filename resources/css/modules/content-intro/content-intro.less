@@ -15,13 +15,35 @@
     }
 
     @media(min-width: @lg-min) {
-      margin: 78px auto;
+      margin: 78px auto 53px;
     }
 
   .main--title {
-    font-size: 3.4rem;
+    font-size: 2.6rem;
     width: 100%;
     color: @dark-gray;
+
+    @media(min-width: @md-min) {
+      font-size: 3.4rem; 
+    }
+
+    @media(min-width: @lg-min) { 
+      font-size: 4.6rem;  
+    }
+     
+    small {
+      font-size: 1.8rem;
+      margin: 0 -0.5rem;
+
+      @media(min-width: @md-min) {
+        font-size: 2rem; 
+      }
+
+      @media(min-width: @lg-min) { 
+        font-size: 2.5rem;  
+      }
+    }   
+        
   }
   .main--content {
     color: @gray;
