@@ -1,8 +1,10 @@
 import $ from "./../vendor/jquery/dist/jquery";
 import noUiSlider from "./../vendor/noUiSlider/nouislider";
-import wNumb from "./../vendor/wNumb/wNumb";
+import wnumb from "./../vendor/wNumb/wnumb";
 
 var rangeSlider = () => {
+
+  console.log(wnumb);
 
   var snapSlider = document.getElementById('slider'),
       snapSlider1 = document.getElementById('slider1'),
@@ -17,7 +19,12 @@ var rangeSlider = () => {
       range: {
         'min': 0,
         'max': 1000000
-      }
+      },
+      format: wnumb({
+    		decimals: 3,
+    		thousand: '.',
+    		postfix: ' (US $)',
+    	})
     });
 
     noUiSlider.create(snapSlider1, {
@@ -31,7 +38,6 @@ var rangeSlider = () => {
       }
 
     });
-
 
     var snapValues = [
       document.getElementById('slider-snap-value-lower'),

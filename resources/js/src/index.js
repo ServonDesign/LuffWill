@@ -35,7 +35,7 @@ function runImportedFunctions(){
 
 		navigation();
 		sideSearch();
-		rangeSlider();
+		//rangeSlider();
 		modal();
 		themeSwitch();
 }

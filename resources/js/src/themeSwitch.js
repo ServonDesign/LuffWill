@@ -6,7 +6,7 @@ var themeSwitch = () => {
     $(':radio').change(function () {
       console.log("change parent");
       if ( $(".radio-rent").is(":checked") ) {
-        $("body").removeClass("theme--default").addClass("theme--green");
+        $("body").removeClass("theme--default theme--orange").addClass("theme--green");
       }
 
       if ( $(".radio-buy").is(":checked") ) {
