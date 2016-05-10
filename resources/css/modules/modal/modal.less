@@ -1,15 +1,19 @@
 .modal-subscription {
   background: #ffffff;
-  width: 60%;
   margin: 0 auto;
   padding: 4rem;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  width: 90%;
   display: none;
+
+  @media(min-width: @md-min) {
+    width: 60%; 
+  }
+      
 
   &.isActive {
     display: block;
@@ -39,9 +43,10 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: #79a52b;
   opacity: 0.6;
   display: none;
+  z-index: 1;
+  background-image: radial-gradient(circle 1500px at 50.25% 18.26%, rgba(35, 148, 14, 0.6) 0%, rgba(218, 208, 27, 0.6) 100%);
 
   &.isActive {
     display: block;

@@ -10,22 +10,30 @@
 
   .header--nav__container {
     color: @nav-header;
-    margin: 1.5rem 0;
+    //margin: 1.5rem 0;
     display: table;
+    margin: 0;
 
     @media(min-width: @lg-min){
-      margin: 2.5rem 0;
+      //margin: 2.5rem 0;
     }
   }
 
   .header--nav__item {
     display: table-cell;
-    padding-right: 2rem;
+    //padding-right: 2rem;
+    position: relative;
 
     &:last-child {
       margin-right: 0;
       paddin-right: 0;
     }
+
+    &:hover .header--sub-nav{
+       visibility: visible;
+       opacity: 1;
+    }
+
   }
 
   .header--nav__link {
@@ -35,13 +43,21 @@
     .align-items(baseline);
     color: @gray;
 
+    line-height: 8.2rem;
+    padding: 0 1.3rem;
+
+    &:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
     .header--nav__icon {
       fill: @light-gray;
       width: 1.8rem;
-      height: 1.8rem;
+      height: 8.2rem;
       margin-right: 0.5rem;
       position: relative;
-      top: 0.3rem;
+      top: -0.2rem;
 
       svg {
         height: inherit;
@@ -49,6 +65,56 @@
         display: inline-block;
         vertical-align: top;
       }
+    }
+  }
+
+  .header--sub-nav {
+    padding: 0 2px;
+    margin: 0;
+    position: absolute;
+    background: #ffffff;
+    width: 24rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+
+    & > li {
+      line-height: auto;
+      margin-bottom: 0;
+      &:last-child a {
+
+      }
+    }
+
+    & a {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      .flexbox();
+      .align-items(center);
+      color: @gray;
+      padding: 1.8rem 0rem 1.8rem 2.5rem;
+      border-bottom: 1px solid @green-lightest;
+
+
+      &:hover {
+        background: #ffffff;
+        color: #000000;
+      }
+    }
+
+    & ul {
+      margin: 0;
+
+      li {
+        margin-bottom: 0;
+        //border-top: 1px solid @green-lightest;
+      }
+      
+      a {
+        font-size: 1.4rem;
+        padding-left: 4.2rem;
+      }
+
     }
   }
 

@@ -6,7 +6,7 @@
 .header {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0 15px;
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
   z-index: 1;
 
@@ -19,7 +19,7 @@
   }
 
   &--container {
-    .container(fluid);
+    .container(fluid, pull-in);
     .flexbox();
     .justify-content(space-between);
     height: 6rem;
@@ -31,10 +31,11 @@
 
   .header--contact__container,
   .header--nav__container {
-    margin: 1.5rem 0;
+    //margin: 1.5rem 0;
+    margin: 0;
 
     @media(min-width: @lg-min){
-      margin: 2rem 0;
+      //margin: 2rem 0;
     }
   }
 
