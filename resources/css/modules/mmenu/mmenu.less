@@ -83,7 +83,7 @@
             }
 
             > .mm-listview{
-               margin: 20px -20px;
+               margin: 20px 0px;
             }
             > .mm-list-view:first-child,
             > .mm-navbar + .mm-listview{
@@ -217,11 +217,11 @@
                 white-space: nowrap;
                 overflow: hidden;
                 display: block;
-                padding: 10px 10px 10px 20px;
+                padding: 10px 10px 10px 10px;
                 margin: 0;
 
                 @media(min-width: @md-min) {
-                    padding: 10px 10px 10px 20px; 
+                    padding: 10px 10px 10px 10px; 
                 }
                     
 
@@ -258,8 +258,8 @@
             z-index: 2;
             &:before{
                 content: '';
-                border-left-width: 1px;
-                border-left-style: solid;
+                //border-left-width: 1px;
+                //border-left-style: solid;
                 display: block;
                 position: absolute;
                 top: 0;
@@ -327,7 +327,8 @@
         right: 0;
         > *{
             display: block;
-            padding: 10px 0;
+            //padding: 10px 0;
+            line-height: 6rem;
         }
         a,
         a:hover{
@@ -386,7 +387,7 @@
         &:before{
             border-right: none;
             border-bottom: none;
-            left: 20px;
+            left: 40px;
         }
     }
 
@@ -526,7 +527,9 @@ html{
     }
 
     &-title{
-        font-weight: 500;
+        text-transform: uppercase;
+        color: #ffffff;
+        .font-bold;
         font-size: 2rem;
         padding:0;
         line-height: 1;
@@ -539,6 +542,24 @@ html{
         >.mm-list:first-child,
         >.mm-navbar+.mm-listview{
             margin-top: 0;
+        }
+    }
+}
+
+.mm-panel{
+
+    .primary-nav__mobile-btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 40px;
+        color: #ffffff;
+        font-size: 2rem;
+    }
+    
+    &:first-child {
+        .primary-nav__mobile-btn-close {
+            float: left;
         }
     }
 }
