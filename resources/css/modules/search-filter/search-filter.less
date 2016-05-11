@@ -137,13 +137,21 @@
 .theme--orange {
 
   .search-filter {
-    border-bottom: 1px solid @orange-lightest;
+    border-bottom: 1px solid #fbdcb2;
 
     &--form {
       @media(min-width: @lg-min) {
-        border-right: 1px solid @orange-lightest;
-        border-left: 1px solid @orange-lightest;
+        border-right: 1px solid #fbdcb2;
+        border-left: 1px solid #fbdcb2;
       }
+    }
+
+    input::-webkit-input-placeholder {
+      font-size: 1.4rem;
+    }
+
+    input::-moz-placeholder {
+      font-size: 1.4rem;
     }
   }
 
@@ -212,13 +220,13 @@
   }
 
   .search-filter {
-    border-bottom: 1px solid @green-lightest;
+    border-bottom: 1px solid #d9e6c3;
 
     &--form {
 
       @media(min-width: @lg-min) {
-        border-right: 1px solid @green-lightest;
-        border-left: 1px solid @green-lightest;
+        border-right: 1px solid #d9e6c3;
+        border-left: 1px solid #d9e6c3;
       }
 
     }
