@@ -1,8 +1,9 @@
 .featured-content {
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 
   @media(min-width: @sm-min){
+    margin-bottom: 1rem;
     padding: 0 15px;
   }
 
@@ -46,6 +47,13 @@
       .column-m(6, sm);
   		.column-m(6, md);
   		.column-m(4, lg);
+
+      margin: 0 2.5rem 1.5rem;
+
+      @media(min-width: @sm-min) {
+        margin: 0 1.5rem 2.5rem; 
+      }
+          
 
       &.theme--green {
         .btn {

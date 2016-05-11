@@ -45,7 +45,7 @@
     .flexbox();
     .flex-direction(column);
     .flex-wrap(wrap);
-    height: 85px;
+    height: 7.4rem;
 
     @media(min-width: @sm-min) {
       .flex-direction(row);
@@ -127,6 +127,12 @@
     .footer--container__info {
       width: 100%;
     }
+
+    .footer__names {
+      span:last-child {
+        margin-left: 0.5rem;
+      }
+    }
   }
 
   .isTablet{
@@ -156,7 +162,8 @@
     }
 
     .footer__address {
-      text-align: left
+      text-align: left;
+      width: 80%;
     }
 
     .footer__address p,
