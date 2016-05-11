@@ -62,13 +62,6 @@
     &:last-child {
       margin-right: 0;
     }
-
-    &:hover ul {
-      margin: 0;
-      max-height: 50rem;
-      visibility: visible;
-      opacity: 1; 
-    }
   }
 
   &__link {
@@ -105,17 +98,11 @@
   &__sub-nav {
     margin: 0;
     width: 100%;
-    text-align: center;
-    background: rgba(255,255,255,0.8);
-    max-height: 0;
-    visibility: hidden;
-    opacity: 0;
     transition: 0.3s all ease-in;
 
     li {
       list-style-type: none;
       margin: 0;
-      border-top: 1px solid @green-lightest;
     }
 
     a {

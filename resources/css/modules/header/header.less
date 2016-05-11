@@ -10,16 +10,16 @@
   position: relative;
   z-index: 1;
 
-  @media(min-width: @md-min){
+  @media(min-width: @sm-min){
     padding: 0 30px;
   }
 
   @media(min-width: @lg-min){
-    padding: 0 30px;
+    padding: 0;
   }
 
   &--container {
-    .container(fluid, pull-in);
+    .container(fluid);
     .flexbox();
     .justify-content(space-between);
     height: 6rem;
@@ -31,12 +31,7 @@
 
   .header--contact__container,
   .header--nav__container {
-    //margin: 1.5rem 0;
     margin: 0;
-
-    @media(min-width: @lg-min){
-      //margin: 2rem 0;
-    }
   }
 
   .header--btn__search,

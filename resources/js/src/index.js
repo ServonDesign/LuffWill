@@ -6,6 +6,7 @@ import {navigation, sideSearch} from "./navigation";
 import {rangeSlider} from "./rangeSlider";
 import {modal} from "./modal";
 import {themeSwitch} from "./themeSwitch";
+import "./../vendor/mmenu.min";
 
 $(document).ready(init);
 
@@ -14,28 +15,11 @@ function init(){
 }
 
 function runImportedFunctions(){
-	// 25
-	console.log(square(5));
+	navigation();
+	sideSearch();
+	//rangeSlider();
+	modal();
+	themeSwitch();
 
-	var cred = {
-		name: "Ritesh Kumar",
-		enrollmentNo: 11115078
-	};
-
-	var x = new MyClass(cred);
-
-	//Ritesh Kumar
-	console.log(x.getName());
-
-	console.log(sum(4,5));
-
-	console.log($([]));
-
-	console.log($.fn);
-
-		navigation();
-		sideSearch();
-		//rangeSlider();
-		modal();
-		themeSwitch();
+	
 }

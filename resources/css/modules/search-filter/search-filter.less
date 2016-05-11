@@ -18,20 +18,27 @@
       .flexbox();
       .align-items(center);
       .justify-content(space-between);
-      padding: 0 20px;
-      margin: 25px 0;
+      padding: 0 2.5rem;
+      //margin: 2.5rem 0;
+      height: 100%;
 
       & > * {
-        margin-left: 15px;
+        margin-left: 1.5rem;
 
         &:first-child {
           margin-left: 0px;
         }
       }
 
-      input::-webkit-input-placeholder {
+      input::-webkit-input-placeholder,
+      input::-moz-placeholder {
         font-size: 1.4rem;
       }
+
+      input::-moz-placeholder {
+        font-size: 1.4rem;
+      }
+
     }
 
     .noUi-handle {
@@ -47,8 +54,10 @@
   }
 
   &--map {
-    //margin-top:
+    //margin-top: -1px;
     .btn {
+      width: 14.4rem;
+      //margin-top: 1px;
       // .flexbox();
       // display: -moz-box;
       display: inline-block;
@@ -104,6 +113,7 @@
 
   .search-filter--form {
     .btn {
+      width: 6.2rem;
       svg {
         width: 2rem;
         height: 2rem;
@@ -137,6 +147,11 @@
     }
   }
 
+
+  .search-filter--range__label {
+    color: @orange-default;
+  }
+
   form {
     #slider-snap-value-lower,
     #slider-snap-value-upper {
@@ -146,6 +161,10 @@
     input,
     input::-webkit-input-placeholder,
     .search-filter--range__label {
+      color: @orange-default;
+    }
+
+    input::-moz-placeholder {
       color: @orange-default;
     }
 
@@ -175,7 +194,7 @@
 
     input,
     input::-webkit-input-placeholder,
-    .search-filter--range__label {
+    .search-filter--range__label, {
       color: @green-default;
     }
 
@@ -207,6 +226,10 @@
     input::-webkit-input-placeholder {
       font-size: 1.4rem;
     }
+
+    input::-moz-placeholder {
+      font-size: 1.4rem;
+    }
   }
 
   form.theme--orange {
@@ -219,6 +242,10 @@
     input::-webkit-input-placeholder,
     .search-filter--range__label {
       color: @green-light;
+    }
+
+    input::-moz-placeholder {
+       color: @green-light;
     }
 
     .noUi-connect,
@@ -235,10 +262,28 @@
   }
 }
 
+.theme--green {
+  .search-filter--range__label {
+    color: @green-default;
+  }
+  input::-moz-placeholder {
+      color: @green-default;
+    }
+}
+
 .theme--default {
   .search-filter input,
   .search-filter input::-webkit-input-placeholder {
     color: @gray;
+  }
+
+  input::-moz-placeholder {
+    color: @gray;
+  }
+
+
+  .search-filter--range__label {
+    color: @green-default;
   }
 }
 

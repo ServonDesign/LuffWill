@@ -26,6 +26,53 @@
 
 <body class="theme--default">
 
+	<nav id="my-menu" class="js-primary-nav side-nav">
+		<ul class="side-nav__container">
+			<li class="side-nav__item">
+				<a href="#" class="side-nav__link">Home</a>
+			</li>
+			<li class="side-nav__item">
+				<a class="side-nav__link" href="#">About</a>
+				<ul class="side-nav__sub-nav">
+					<li><a href="#">Associates</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">The Team</a></li>
+					<li><a href="#">Charities</a></li>
+				</ul>
+			</li>
+			<li class="side-nav__item"><a class="side-nav__link font-bold" href="#">buy</a></li>
+			<li class="side-nav__item"><a class="side-nav__link font-bold" href="#">rent</a></li>
+			<li class="side-nav__item"><a class="side-nav__link" href="#">sell</a></li>
+			<li class="side-nav__item">
+				<a class="side-nav__link" href="#">let</a>
+				<ul class="side-nav__sub-nav">
+					<li>
+						<a href="#" class="font-black">Landlords</a>
+						<ul>
+							<li><a href="#">landlord services</a></li>
+							<li><a href="#">marketing</a></li>
+							<li><a href="#">rent guarantee insurance</a></li>
+							<li><a href="#">landlord guide</a></li>
+							<li><a href="#">fees</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="font-black">tenants</a>
+						<ul>
+							<li><a href="#">fees</a></li>
+							<li><a href="#">emergency</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="side-nav__item"><a class="side-nav__link" href="#">contact</a></li>
+			<li class="side-nav__item"><a class="side-nav__link" href="#">news & events</a></li>
+		</ul>
+	</nav>
+
+
+	<div id="my-wrapper" class="page-wrapper">
+
 	<div class="svg-sprite">
 		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="hide">
 		    <symbol id="alert-i" viewBox="0 0 16 16">
@@ -317,7 +364,7 @@
 		    </symbol>
 		    <symbol id="star" viewBox="0 0 24 24">
 		        <g transform="translate(0, 0)">
-		            <polygon stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2.6 15,9 
+		            <polygon stroke-width="1" stroke-linecap="square" stroke-miterlimit="10" points="12,2.6 15,9 
 		    21.4,9 16.7,13.9 18.6,21.4 12,17.6 5.4,21.4 7.3,13.9 2.6,9 9,9 " stroke-linejoin="miter" />
 		        </g>
 		    </symbol>
@@ -1061,18 +1108,18 @@
 
 	<div class="backdrop"></div>
 
+	</div> <!-- main wrapper -->
+
 	<!-- scripts
 	================================================== -->
 	<script src="resources/js/dist/main.min.js"></script>
 	<script>
-		var rangeSlider = () => {
+		var rangeSlider = function() {
 
-		  console.log(wNumb);
+		  var snapSlider =  document.getElementById('slider');
+		  var snapSlider1 = document.getElementById('slider1');
 
-		  var snapSlider = document.getElementById('slider'),
-		      snapSlider1 = document.getElementById('slider1'),
-
-		  init = () => {
+		  function init(){
 
 		    noUiSlider.create(snapSlider, {
 		      start: [ 250000, 750000 ],

@@ -1,9 +1,9 @@
 .featured-content {
   overflow: hidden;
-  margin-bottom: 3.4rem;
+  margin-bottom: 1rem;
 
-  @media(min-width: @md-min){
-    padding: 0 30px;
+  @media(min-width: @sm-min){
+    padding: 0 15px;
   }
 
   @media(min-width: @lg-min) {
@@ -53,7 +53,7 @@
           fill: #ffffff;
           color: #ffffff;
           height: 4.2rem;
-          border-radius: 0;
+          border-radius: 2px;
         }
 
         .featured__icon svg {
@@ -67,7 +67,7 @@
           fill: #ffffff;
           color: #ffffff;
           height: 4.2rem;
-          border-radius: 0;
+          border-radius: 2px;
         }
 
         .featured__icon svg {
@@ -79,7 +79,9 @@
     .featured__info {
       padding: 0 1.1rem;
 
-      @media(min-width: @md-min) {}
+      @media(min-width: @sm-min) {
+        padding: 0 2.2rem;
+      }
       @media(min-width: @lg-min) {
         padding: 0 2.2rem 2.2rem;
       }
@@ -99,13 +101,13 @@
       .flexbox();
       .justify-content(space-between);
       .align-items(center);
-      height: 4.2rem;
+      height: 4.3rem;
     }
 
     .featured__price {
       padding: 0 1.1rem;
       color: @dark-gray;
-      @media(min-width: @lg-min) {
+      @media(min-width: @sm-min) {
         padding: 0 2.2rem;
       }
     }
@@ -114,18 +116,21 @@
   .featured__info {
     .featured__desc,
     .btn {
-
       display: none;
 
       @media(min-width: @lg-min) {
         display: block;
       }
     }
-
-    .btn svg {
-      width: 1.5rem;
-      height: 1.4rem;
-      margin-top: -0.5rem;
+    .btn {
+      width: 14rem;
+      border-radius: 2px;
+      svg {
+        width: 1.5rem;
+        height: 2rem;
+        margin-top: 0.1rem;
+        float: right;
+      }
     }
   }
 
@@ -137,9 +142,8 @@
   .featured__name {
     font-size: 1.8rem;
     line-height: 1.2;
-    margin: 2.5rem 0;
+    margin: 2rem 0;
     font-weight: 300;
-    .font-bold;
 
     @media(min-width: @lg-min) {
       font-size: 2.1rem;
@@ -174,7 +178,16 @@
   }
 
   .featured__cta {
+
+    .btn {
+      width: 4.3rem;
+      height: 4.3rem !important;
+      border-radius: 1px !important;
+    }
+
     svg {
+      margin-top: -0.4rem;
+      margin-left: 0;
       width: 1.6rem;
       height: 1.6rem;
     }

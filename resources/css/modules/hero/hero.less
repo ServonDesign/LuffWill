@@ -42,12 +42,9 @@
     padding-top: 6rem;
 
     //gradient
-    background-image: -moz-radial-gradient(top, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
-    background-image: -o-radial-gradient(top, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
-    background-image: -webkit-radial-gradient(top, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
-    background-image: radial-gradient(at top, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(circle 425px at 50% 0.18%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
 
-    @media(min-width: @md-min){
+    @media(min-width: @sm-min){
       height: 40rem;
     }
 
@@ -66,8 +63,9 @@
     font-family: 'Aileron Thin';
     color: #ffffff;
     font-size: 3.8rem;
+    line-height: 1;
 
-    @media(min-width: @md-min){
+    @media(min-width: @sm-min){
       font-size: 7.5rem;
     }
 
@@ -83,7 +81,7 @@
     margin: 0 1.5rem;
     display: inline-block;
 
-    @media(min-width: @md-min){
+    @media(min-width: @sm-min){
       max-width: 12rem;
     }
 
@@ -117,7 +115,7 @@
     background: #afd469;
     background-size: 100% 100%;
 
-    @media(min-width: @md-min){
+    @media(min-width: @sm-min){
       background: url(../imgs/hero-green.jpg) no-repeat center;
       background-size: cover;
     }
