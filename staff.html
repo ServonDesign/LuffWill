@@ -2,22 +2,26 @@
 <html lang="en">
 
 <head>
+
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
 	<title>Title</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
+
 	<!-- Useful Metas
 	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
 	<!-- CSS
 	================================================== -->
 	<link rel="stylesheet" href="resources/css/main.css" />
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.0.2/nouislider.min.js"></script>
 	<script type="text/javascript" src="./resources/js/vendor/wNumb/wnumb.js"></script>
+
 </head>
 
 <body class="theme--default">
@@ -566,12 +570,15 @@
 			<div class="search-filter--form">
 				<form action="#">
 					<div class="search-filter--range__label font-white">price range:</div>
+
 					<div class="slider--value">
 						<div id="slider-snap-value-lower-search" class="font-bold font-white"></div>
 						<span class="font-white">to</span>
 						<div id="slider-snap-value-upper-search" class="font-bold font-white"></div>
 					</div>
+
 					<div id="slider1"></div>
+
 					<div class="bn-form-group">
 						<input type="text" placeholder="County/Town/Postcode">
 					</div>
@@ -591,8 +598,10 @@
 					</svg>
 				</button>
 			</div>
+
 		</div>
 	</div>
+
 
 	<section class="hero hero-small">
 		<div class="hero--container">
@@ -603,12 +612,14 @@
 				</div>
 				<div class="hero--container__tagline">looking to rent?</div>
 			</div>
+
 			<div class="hero--container__buy">
 				<div class="hero--container__logo hero__logo--buy">
 					<img src="./resources/imgs/LW-logo-white-01.svg" alt="Luff and Wilkin" class="hero--image">
 				</div>
 				<div class="hero--container__tagline">looking to buy?</div>
 			</div>
+
 			<div class="hero--container__rent">
 				<div class="hero--container__logo hero__logo--rent">
 					<img src="./resources/imgs/L-logo-white-01.svg" alt="Luff Associates" class="hero--image">
@@ -616,413 +627,442 @@
 				<div class="hero--container__tagline">looking to rent?</div>
 			</div>
 		</div>
+
+	</section>
+
+	<section class="search-filter hide-max-md">
+		<div class="search-filter--container">
+			<div class="radio--group">
+				<div class="radio radio--buy">
+					<label>
+						<span class="font-orange">Buy</span>
+						<input type="radio" name="choice" value="buy" class="radio-buy">
+						<label></label>
+					</label>
+				</div>
+				<div class="radio radio--sell">
+					<label>
+						<span class="font-green">Rent</span>
+						<input type="radio" name="choice" value="rent" class="radio-rent">
+						<label></label>
+					</label>
+				</div>
+			</div>
+			<div class="search-filter--form">
+				<form action="#">
+					<div class="search-filter--range__label">range:</div>
+					<div id="slider-snap-value-lower"></div>
+					<div id="slider"></div>
+					<div id="slider-snap-value-upper"></div>
+					<div class="bn-form-group">
+						<input type="text" placeholder="County/Town/Postcode">
+					</div>
+					<button class="btn">
+						<div class="btn--icon">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+							</svg>
+						</div>
+					</button>
+				</form>
+			</div>
+			<div class="search-filter--map">
+				<button class="btn">
+					<span>Map Search</span>
+					<svg>
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
 	</section>
 
 	<!-- staff content -->
 	<section class="staff">
-
-		<div class="staff--container__head">
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
+			<div class="staff--container__head">
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Mary Luff</h3>
-					<span class="staff__title">Director and Founder</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>mary@luff-associates.com</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--orange">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
-						</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Mary Luff</h3>
+						<span class="staff__title">Director and Founder</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>mary@luff-associates.com</span>
+						</a>
 					</div>
 				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">David Wilkin</h3>
-					<span class="staff__title">Director</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>david@luffandwilkin.co.uk</span>
-					</a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="staff--container">
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
+				<div class="staff--item theme--orange">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Toby Wilkinson</h3>
-					<span class="staff__title">Lettings Manager</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276 64881 - Ext 3</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>toby@luff-associates.com</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
-						</div>
+					<div class="staff__details">
+						<h3 class="staff__name">David Wilkin</h3>
+						<span class="staff__title">Director</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>david@luffandwilkin.co.uk</span>
+						</a>
 					</div>
 				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Steve Barnett</h3>
-					<span class="staff__title">Lettings Negotiator</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276 64881 - Ext 3</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>steve@luff-associates.com</span>
-					</a>
-				</div>
 			</div>
-
-			<div class="staff--item theme--orange">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
+			<div class="staff--container">
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Darren Sworn</h3>
-					<span class="staff__title">Sales Manager</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01252 883 899</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>darren@luffandwilkin.co.uk</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--orange">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
-						</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Toby Wilkinson</h3>
+						<span class="staff__title">Lettings Manager</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276 64881 - Ext 3</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>toby@luff-associates.com</span>
+						</a>
 					</div>
 				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Paul Telfer</h3>
-					<span class="staff__title">Property Consultant</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01252 838899</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>info@luffandwilkin.co.uk</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Tina Herd</h3>
-					<span class="staff__title">Senior Executive</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881 - Ext 3</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>tina@luffassociates.com</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
-						</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Steve Barnett</h3>
+						<span class="staff__title">Lettings Negotiator</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276 64881 - Ext 3</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>steve@luff-associates.com</span>
+						</a>
 					</div>
 				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Dawn Downs</h3>
-					<span class="staff__title">Administration Manager</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881 - Ext 1</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>dawn@luff-associates.com</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
+				<div class="staff--item theme--orange">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Becky Winn</h3>
-					<span class="staff__title">Property Administrator</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881 - Ext 1</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>becky@luff-associates.com</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--orange">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
-						</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Darren Sworn</h3>
+						<span class="staff__title">Sales Manager</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01252 883 899</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>darren@luffandwilkin.co.uk</span>
+						</a>
 					</div>
 				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Julia Low</h3>
-					<span class="staff__title">Contracts Manager</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881 - Ext 2</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>julia@luff-associates.com</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
+				<div class="staff--item theme--orange">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Peter Walker</h3>
-					<span class="staff__title">Financial Director</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881 - Ext 4</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>peter@luff-associates.com</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
-						</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Paul Telfer</h3>
+						<span class="staff__title">Property Consultant</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01252 838899</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>info@luffandwilkin.co.uk</span>
+						</a>
 					</div>
 				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Matt Tuxford</h3>
-					<span class="staff__title">Accounts Manager</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881 - Ext 4</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>matt@luff-associates.com</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--green">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">Grant Stevens</h3>
-					<span class="staff__title">Mortgage Broker for 360 Mortgages</span>
-				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>07717706887</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>Grant@360mortgages.net</span>
-					</a>
-				</div>
-			</div>
-
-			<div class="staff--item theme--orange">
-				<div class="staff__avatar">
-					<div class="staff__image">
-						<div class="ratio--1-1">
-							<img src="./resources/imgs/placeholder-image.jpg">
-						</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Tina Herd</h3>
+						<span class="staff__title">Senior Executive</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881 - Ext 3</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>tina@luffassociates.com</span>
+						</a>
 					</div>
 				</div>
-				<div class="staff__details">
-					<h3 class="staff__name">David Wilkin</h3>
-					<span class="staff__title">Director</span>
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Dawn Downs</h3>
+						<span class="staff__title">Administration Manager</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881 - Ext 1</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>dawn@luff-associates.com</span>
+						</a>
+					</div>
 				</div>
-				<div class="staff__contacts">
-					<a href="#" class="staff__phone">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
-						</svg>
-						<span>01276-64881</span>
-					</a>
-					<a href="#" class="staff__email">
-						<svg>
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
-						</svg>
-						<span>david@luffandwilkin.co.uk</span>
-					</a>
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Becky Winn</h3>
+						<span class="staff__title">Property Administrator</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881 - Ext 1</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>becky@luff-associates.com</span>
+						</a>
+					</div>
+				</div>
+				<div class="staff--item theme--orange">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Julia Low</h3>
+						<span class="staff__title">Contracts Manager</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881 - Ext 2</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>julia@luff-associates.com</span>
+						</a>
+					</div>
+				</div>
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Peter Walker</h3>
+						<span class="staff__title">Financial Director</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881 - Ext 4</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>peter@luff-associates.com</span>
+						</a>
+					</div>
+				</div>
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Matt Tuxford</h3>
+						<span class="staff__title">Accounts Manager</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881 - Ext 4</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>matt@luff-associates.com</span>
+						</a>
+					</div>
+				</div>
+				<div class="staff--item theme--green">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="staff__details">
+						<h3 class="staff__name">Grant Stevens</h3>
+						<span class="staff__title">Mortgage Broker for 360 Mortgages</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>07717706887</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>Grant@360mortgages.net</span>
+						</a>
+					</div>
+				</div>
+				<div class="staff--item theme--orange">
+					<div class="staff__avatar">
+						<div class="staff__image">
+							<div class="ratio--1-1">
+								<img src="./resources/imgs/placeholder-image.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="staff__details">
+						<h3 class="staff__name">David Wilkin</h3>
+						<span class="staff__title">Director</span>
+					</div>
+					<div class="staff__contacts">
+						<a href="#" class="staff__phone">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mobile"></use>
+							</svg>
+							<span>01276-64881</span>
+						</a>
+						<a href="#" class="staff__email">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plane"></use>
+							</svg>
+							<span>david@luffandwilkin.co.uk</span>
+						</a>
+					</div>
 				</div>
 			</div>
-
-
-		</div>
-	</section>
-	<!-- end of details content -->
+		</section>
+	<!-- end of staff content -->
 
 	<section class="subscribe hide-min-lg">
 		<div class="subscribe--container">
@@ -1328,6 +1368,7 @@
 
 	</footer>
 
+
 	<div id="modal-container" class="modal-subscription">
 		<div class="subscribe--form-container">
 			<form action="#" class="subscribe--form">
@@ -1348,6 +1389,7 @@
 	<!-- scripts
 	================================================== -->
 	<script src="resources/js/dist/main.min.js"></script>
+
 	<script>
 		var rangeSlider = function() {
 
@@ -1414,3 +1456,4 @@
 </body>
 
 </html>
+
