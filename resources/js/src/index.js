@@ -21,5 +21,16 @@ function runImportedFunctions(){
 	modal();
 	themeSwitch();
 
+	$(".placeholder + input").keyup(function() {
+        if($(this).val().length) {
+            $(this).prev('.placeholder').hide();
+        } else {
+            $(this).prev('.placeholder').show();
+        }
+    });
+    $(".placeholder").click(function() {
+        $(this).next().focus();
+    });
+
 	
 }

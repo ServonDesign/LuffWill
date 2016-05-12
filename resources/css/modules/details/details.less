@@ -91,6 +91,7 @@
     .details__roominfo {
       .flexbox();
       .align-items(baseline);
+      .flex-wrap(wrap);
 
       svg {
         width: 1.6rem;
@@ -100,11 +101,14 @@
       p {
         font-size: 2.2rem;
         margin: 0 3.6rem 0 0;
+        width: 100%;
+        .font-bold;
       }
 
       span {
         font-size: 1.8rem;
         margin-right: 1.6rem;
+        color: #333333;
       }
     }
 
@@ -121,7 +125,7 @@
         margin: 0;
       }
       li {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 2.4rem;
         list-style-type: none;
       }
@@ -223,17 +227,17 @@
 
   .details--info__secondary {
     .flexbox();
-    margin: 2.7rem 0;
+    margin: 2rem 0;
     color: @dark-gray;
     .flex-wrap(wrap);
 
     @media(min-width: @sm-min) {
       .flex-wrap(wrap);
-      margin: 2.7rem 0 0;
+      margin: 2rem 0 0;
     }
 
     @media(min-width: @lg-min) { 
-      margin: 5.6rem 0;  
+      margin: 5.6rem 0 5.3rem;  
     }
         
 
@@ -244,6 +248,14 @@
     .details__secondary--content {
       max-width: 100%;
       width: 100%;
+
+      h3 {
+        color: @orange-light;
+      }
+
+      p {
+        color: #333333;
+      }
 
       @media(min-width: @lg-min) {
         border-right: 1px solid @orange-default;
@@ -320,10 +332,16 @@
           .align-items(center);
           text-transform: uppercase;
 
+          &:hover {
+            svg {
+              fill: @orange-dark;
+            }
+          }
+
           span:first-child {
             width: 8rem;
             height: 8rem;
-            border: 1px solid @orange-default;
+            border: 1px solid @orange-light;
             border-radius: 50%;
             display: inline-block;
             position: relative;
@@ -383,7 +401,7 @@
     margin: 2.7rem 0 2.7rem;
 
     @media(min-width: @lg-min) { 
-      margin: 2.7rem 0 6rem;  
+      margin: 1.9rem 0 5rem;  
     }
         
   }
@@ -430,7 +448,7 @@
   }
 
   .details__name {
-    color: @orange-default;
+    color: @orange-light;
   }
 
 }
@@ -444,7 +462,7 @@
     }
 
     @media(min-width: @lg-min) {
-      margin: 0 0 3.5rem 0;
+      margin: 0 0 2.9rem 0;
     }
         
   }
@@ -452,11 +470,11 @@
 
 .details__full-details__container {
 
-  margin-bottom: 5.5rem;
+  margin-bottom: 2.7rem;
 
   @media(min-width: @lg-min) {
     height: 56rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.7rem;
   }
 
   -webkit-column-count: 1;

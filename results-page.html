@@ -618,51 +618,49 @@
 		</div>
 	</section>
 	<section class="search-filter hide-max-md">
-		<div class="search-filter--container">
-			<div class="radio--group">
-				<div class="radio radio--buy">
-					<label>
-						<span class="font-orange">Buy</span>
-						<input type="radio" name="choice" value="buy" class="radio-buy">
-						<label></label>
-					</label>
-				</div>
-				<div class="radio radio--sell">
-					<label>
-						<span class="font-green">Rent</span>
-						<input type="radio" name="choice" value="rent" class="radio-rent">
-						<label></label>
-					</label>
-				</div>
-			</div>
-			<div class="search-filter--form">
-				<form action="#">
-					<div class="search-filter--range__label">range:</div>
-					<div id="slider-snap-value-lower"></div>
-					<div id="slider"></div>
-					<div id="slider-snap-value-upper"></div>
-					<div class="bn-form-group">
-						<input type="text" placeholder="County/Town/Postcode">
+			<div class="search-filter--container">
+				<div class="radio--group">
+					<div class="radio radio--buy">
+						<label>
+							<span class="font-orange">Buy</span>
+							<input type="radio" name="choice" value="buy" class="radio-buy">
+							<label></label>
+						</label>
 					</div>
-					<button class="btn">
-						<div class="btn--icon">
+					<div class="radio radio--sell">
+						<label>
+							<span class="font-green">Rent</span>
+							<input type="radio" name="choice" value="rent" class="radio-rent">
+							<label></label>
+						</label>
+					</div>
+				</div>
+				<div class="search-filter--form">
+					<form action="#">
+						<div class="search-filter--range__label">range:</div>
+						<div id="slider-snap-value-lower"></div>
+						<div id="slider"></div>
+						<div id="slider-snap-value-upper"></div>
+						<div class="bn-form-group">
+							<input type="text" placeholder="County/Town/Postcode">
+						</div>
+						<button class="btn">
 							<svg>
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
 							</svg>
-						</div>
+						</button>
+					</form>
+				</div>
+				<div class="search-filter--map">
+					<button class="btn">
+						<span>Map Search</span>
+						<svg>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use>
+						</svg>
 					</button>
-				</form>
+				</div>
 			</div>
-			<div class="search-filter--map">
-				<button class="btn">
-					<span>Map Search</span>
-					<svg>
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-	</section>
+		</section>
 	<!-- results content -->
 	<section class="sub-filter hide-max-md">
 		<div class="sub-filter--container">
@@ -786,15 +784,9 @@
 						</div>
 						<div class="results__bottom-info">
 							<div class="results__room-info hide-max-md">
-								<span>
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#curtain"></use></svg> 4
-								</span>
-								<span>
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg> 5
-								</span>
-								<span>
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg> 3
-								</span>
+								<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#curtain"></use></svg>&nbsp;4</span>
+								<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>&nbsp;5</span>
+								<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>&nbsp;3</span>
 							</div>
 							<div class="results__price-info hide-min-lg">
 								<span>Per month:</span>
@@ -803,7 +795,7 @@
 							<div class="results__cta hide-min-lg">
 								<button class="btn btn-results-cta">
 									<svg>
-										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alert-i"></use>
 									</svg>
 								</button>
 							</div>
@@ -814,8 +806,7 @@
 						<div class="main__info">
 							<h3 class="main__info__name">Medstead Road, Beech, Alton, Hampshire</h1>
 							<p class="main__info__price">
-								<span class="price__unit font-light">£</span>
-								880,000
+								<span class="price__unit font-light">£</span>880,000
 							</p>
 						</div>
 						<div class="main__description">
@@ -828,7 +819,7 @@
 								<span>calculator</span>
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#calculator"></use></svg>
 							</button>
-							<button class="btn btn-more-details">More Details <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use></svg></button>
+							<button class="btn btn-more-details">More Details <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alert-i"></use></svg></button>
 						</div>
 					</div>
 					<div class="results__name hide-min-lg">
@@ -842,15 +833,9 @@
 							</div>
 							<div class="results__bottom-info">
 								<div class="results__room-info hide-max-md">
-									<span>4
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#curtain"></use></svg>
-								</span>
-									<span>5
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>
-								</span>
-									<span>3
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>
-								</span>
+									<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#curtain"></use></svg>&nbsp;4</span>
+									<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>&nbsp;5</span>
+									<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>&nbsp;3</span>
 								</div>
 								<div class="results__price-info hide-min-lg">
 									<span>Per month:</span>
@@ -859,7 +844,7 @@
 								<div class="results__cta hide-min-lg">
 									<button class="btn btn-results-cta">
 										<svg>
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alert-i"></use>
 										</svg>
 									</button>
 								</div>
@@ -870,8 +855,7 @@
 							<div class="main__info">
 								<h3 class="main__info__name">Medstead Road, Beech, Alton, Hampshire</h1>
 							<p class="main__info__price">
-								<span class="price__unit font-light">£</span>
-								880,000
+								<span class="price__unit font-light">£</span>880,000
 							</p>
 						</div>
 						<div class="main__description">
@@ -884,7 +868,7 @@
 								<span>calculator</span>
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#calculator"></use></svg>
 							</button>
-							<button class="btn btn-more-details">More Details <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use></svg></button>
+							<button class="btn btn-more-details">More Details <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alert-i"></use></svg></button>
 						</div>
 					</div>
 					<div class="results__name hide-min-lg">
@@ -898,15 +882,9 @@
 								</div>
 								<div class="results__bottom-info">
 									<div class="results__room-info hide-max-md">
-										<span>4
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#curtain"></use></svg>
-								</span>
-										<span>5
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>
-								</span>
-										<span>3
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>
-								</span>
+										<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#curtain"></use></svg>&nbsp;4</span>
+										<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>&nbsp;5</span>
+										<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>&nbsp;3</span>
 									</div>
 									<div class="results__price-info hide-min-lg">
 										<span>Per month:</span>
@@ -915,7 +893,7 @@
 									<div class="results__cta hide-min-lg">
 										<button class="btn btn-results-cta">
 											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use>
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alert-i"></use>
 											</svg>
 										</button>
 									</div>
@@ -926,8 +904,7 @@
 								<div class="main__info">
 									<h3 class="main__info__name">Medstead Road, Beech, Alton, Hampshire</h1>
 							<p class="main__info__price">
-								<span class="price__unit font-light">£</span>
-								880,000
+								<span class="price__unit font-light">£</span>880,000
 							</p>
 						</div>
 						<div class="main__description">
@@ -940,7 +917,7 @@
 								<span>calculator</span>
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#calculator"></use></svg>
 							</button>
-							<button class="btn btn-more-details">More Details <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use></svg></button>
+							<button class="btn btn-more-details">More Details <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alert-i"></use></svg></button>
 						</div>
 					</div>
 					<div class="results__name hide-min-lg">
@@ -954,15 +931,9 @@
 									</div>
 									<div class="results__bottom-info">
 										<div class="results__room-info hide-max-md">
-											<span>4
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#curtain"></use></svg>
-								</span>
-											<span>5
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>
-								</span>
-											<span>3
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>
-								</span>
+											<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#curtain"></use></svg>&nbsp;4</span>
+											<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>&nbsp;5</span>
+											<span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bed"></use></svg>&nbsp;3</span>
 										</div>
 										<div class="results__price-info hide-min-lg">
 											<span>Per month:</span>
@@ -971,7 +942,7 @@
 										<div class="results__cta hide-min-lg">
 											<button class="btn btn-results-cta">
 												<svg>
-													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use>
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alert-i"></use>
 												</svg>
 											</button>
 										</div>
@@ -982,8 +953,7 @@
 									<div class="main__info">
 										<h3 class="main__info__name">Medstead Road, Beech, Alton, Hampshire</h1>
 							<p class="main__info__price">
-								<span class="price__unit font-light">£</span>
-								880,000
+								<span class="price__unit font-light">£</span>880,000
 							</p>
 						</div>
 						<div class="main__description">
@@ -996,7 +966,7 @@
 								<span>calculator</span>
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#calculator"></use></svg>
 							</button>
-							<button class="btn btn-more-details">More Details <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use></svg></button>
+							<button class="btn btn-more-details">More Details <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alert-i"></use></svg></button>
 						</div>
 					</div>
 					<div class="results__name hide-min-lg">

@@ -55,7 +55,7 @@ button {
 }
 
 .btn-gallery-cta {
-  background: @orange-default;
+  background: @orange-light;
   color: @white;
   font-size: 1.6rem;
   text-transform: capitalize;
@@ -72,7 +72,7 @@ button {
 .btn-floor-cta {
   background: @white;
   color: @orange-dark;
-  border: 1px solid @orange-default;
+  border: 1px solid @orange-light;
   font-size: 1.6rem;
   text-transform: capitalize;
   .flexbox();
@@ -108,7 +108,8 @@ button {
 }
 
 .btn-results-cta {
-  border-radius: 0;
+  border-radius: 2px;
+  width: 14rem;
   svg {
     width: 1.6rem;
     height: 1.6rem;
@@ -124,10 +125,13 @@ button {
 }
 
 .btn-more-details {
+  width: 14rem;
   svg {
-    width: 1.6rem;
-    height: 1.6rem;
     fill: @light-gray;
+    width: 1.5rem !important;
+    height: 2rem !important;
+    margin-top: -.5rem;
+    //float: right;
   }
 }
 
@@ -160,12 +164,12 @@ button {
   }
 
   .btn-results-cta {
-    border: 1px solid @orange-default;
+    border: 1px solid @orange-light;
     color: @orange-default;
   }
 
   .btn-more-details {
-    background: @orange-default;
+    background: @orange-light;
     color: #ffffff;
     svg {
       width: 1.6rem;

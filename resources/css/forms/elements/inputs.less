@@ -38,3 +38,87 @@ input[type="color"]{
         .placeholder(@input-disabled-color);
     }
 }
+
+
+// valuation 
+
+.valuation--container {
+    & > form {
+        width: 100%;
+    }
+}
+
+.form-container {
+    .flexbox();
+    .flex-direction(row);
+    .justify-content(space-between);
+
+    .form-item {
+        .flexbox();
+        width: 46rem;
+        padding: 1rem 0;
+        position: relative;
+
+        .isRequired {
+            width: 46rem;
+            position: relative;
+        }
+
+        select {
+            width: 8rem;
+            margin-right: 3rem;
+            border-radius: 0px;
+        }
+
+        input {
+            font-size: 1.5rem;
+        }
+
+        .radio { 
+
+            .radio-group {
+                .justify-content(space-between);
+            }
+
+            label {
+                padding: 0;
+
+                span {
+                    font-family: 'Aileron';
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                }
+
+                label {
+                    top: 0;
+                }
+            }
+        }
+
+        .placeholder {
+            position: absolute;
+            left: 0;
+            color: @green-default;
+            font-size: 1.5rem;
+            line-height: 3.6rem;
+            padding: 0 1.2rem;
+        }
+
+        .red {
+            color: red;
+            font-size: 1.2rem;
+            position: relative;
+            top: -5px;
+        }
+    }
+
+    .form-group.form-group--wide {
+        .form-item {
+            width: 55.6rem;
+        }
+
+        .isRequired {
+            width: 55.6rem;
+        }
+    }
+}

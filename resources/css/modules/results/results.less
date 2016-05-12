@@ -33,12 +33,13 @@
 		border: 1px solid @lightest-gray;
 		margin-bottom: 3rem;
 
+
 		.base-column-m();
   		.column-m(6, md);
   		.column-m(12, lg);
 
 
-		@media(min-width: @md-min) {
+		@media(min-width: @sm-min) {
 			.flex-direction(column);
 			padding: 0;
 			.flex-wrap(wrap);
@@ -50,7 +51,8 @@
 			padding: 4rem 0;
 			border: none;
 			border-bottom: 1px solid @lightest-gray;
-			margin-bottom: 0;
+			margin: 0;
+			width: 100%;
 		}
 
 	}
@@ -63,6 +65,7 @@
 		@media(min-width: @lg-min) {
 			min-width: 44.8rem;
 			//min-height: 32.2rem;
+			width: auto;
 		}
 
 
@@ -103,6 +106,16 @@
 				display: inline-block;
 				vertical-align: text-top;
 			}
+
+			.btn-results-cta {
+			  width: 4.3rem;
+			  svg {
+			    width: 1.5rem !important;
+			    height: 2rem !important;
+			    margin-top: -.5rem;
+			    margin-left: 0;
+			  }
+			}
 		}
 
 		.results__room-info {
@@ -118,11 +131,13 @@
 
 		.results__availability {
 			font-size: 1.2rem;
-			padding: 0.3rem 1rem;
 			color: #ffffff;
 			position: absolute;
 			right: 0;
 			bottom: 0;
+			width: 40px;
+			height: 17px;
+			text-align: center;
 
 			&.isSold {
 				background: #da245c;
