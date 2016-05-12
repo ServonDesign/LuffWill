@@ -20,6 +20,7 @@
 		.staff--item {
 			
 			padding-top: 4rem;
+			padding-bottom: 1rem;
 
 			width: 100%;
 
@@ -87,7 +88,7 @@
 	.staff__title {
 		color: @darkest-gray;
 		display: block;
-		margin: 0.6rem 0 0.6rem;
+		margin: 0 0 0.6rem;
 	}
 
 	.staff__phone,
@@ -100,7 +101,11 @@
 	.staff__title,
 	.staff__phone,
 	.staff__email {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
+
+		@media(min-width: @md-min) {
+			font-size: 1.5rem; 
+		}
 	}
 
 	.staff__contacts {

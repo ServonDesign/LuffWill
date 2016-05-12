@@ -8,7 +8,11 @@
 
   &.hero-small {
     .hero--container {
-      height: 31.2rem;
+      height: 24.8rem;
+
+      @media(min-width: @sm-min){
+        height: 29rem;
+      }
 
       @media(min-width: @lg-min) {
         height: 34.2rem;
@@ -124,6 +128,14 @@
       background-size: cover;
     }
   }
+  .hero.hero-small {
+    background: #afd469;
+
+    @media(min-width: @md-min){
+      background: url(../imgs/hero-green.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
 }
 
 .theme--orange {
@@ -155,6 +167,15 @@
     }
   }
 
+  .hero.hero-small {
+    background: #ed9f37;
+
+    @media(min-width: @md-min){
+      background: url(../imgs/hero-orange.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+
 }
 
 .theme--green {
@@ -179,6 +200,15 @@
   .hero {
     background: #afd469;
     background-size: 100% 100%;
+
+    @media(min-width: @md-min){
+      background: url(../imgs/hero-green.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .hero.hero-small {
+    background: #afd469;
 
     @media(min-width: @md-min){
       background: url(../imgs/hero-green.jpg) no-repeat center;
