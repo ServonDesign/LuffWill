@@ -225,7 +225,8 @@ input[type="color"]{
         }
 
         .title-filter {
-            height: 3.4rem;
+            min-width: 8rem;
+            height: 4.2rem;
             position: relative;
             margin-bottom: 2rem;
 
@@ -234,7 +235,7 @@ input[type="color"]{
             }
                 
 
-            @media(min-width: @xs-min) {
+            @media(min-width: @sm-min) {
                 margin-right: 3rem;
             }
                 
@@ -243,8 +244,8 @@ input[type="color"]{
                 position: absolute;
                 top: 0;
                 right: 1.2rem;
-                z-index: 2;
-                height: 34px;
+                z-index: 1;
+                height: 4.2rem;
             }
         }
     }
