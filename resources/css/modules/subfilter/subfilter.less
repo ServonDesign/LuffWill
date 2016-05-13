@@ -7,9 +7,17 @@
 		.justify-content(space-between);
 	}
 
+	.btn {
+		height: auto !important;
+	}
+
 	.main-filter,
 	.quantity-filter {
 		.flexbox();
+
+		.btn {
+			height: auto !important;
+		}
 	}
 
 	.quantity-filter {
@@ -27,7 +35,7 @@
 		& > svg {
 			position: absolute;
 			right: 1.2rem;
-			top: 1.6rem;
+			top: 1.9rem;
 		}
 	}
 
@@ -42,13 +50,27 @@
 	}
 
 	.view-render {
+
+		span {
+			line-height: 4.2rem;
+		}
+
 		.btn {
-			padding: 0.6rem 0.2rem;
+			padding: 0 0.2rem;
+
+			svg {
+				margin-top: -5px;
+			}
 		}
 	}
 
 	.checkbox {
 		padding: 0;
+
+		label {
+			padding: 0;
+			line-height: 4.2rem;
+		}
 	}
 
 }

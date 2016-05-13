@@ -37,6 +37,6 @@ function runImportedFunctions(){
     console.log($.fn.slick);
     console.log(slick);
 
-    $("#slider").slick();
+    $("#slidertest").slick();
 	
 }

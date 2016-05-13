@@ -26,6 +26,7 @@ input[type="color"]{
     background-image: none;
     border: 1px solid @input-border;
     font-family: @font-family;
+    height: 4.2rem;
 
     .placeholder();
 
@@ -112,6 +113,11 @@ input[type="color"]{
                 
         }
 
+        select,
+        input {
+            height: 4.2rem;
+        }
+
         select {
             width: 8rem;
             border-radius: 0px;
@@ -119,6 +125,8 @@ input[type="color"]{
             position: relative;
             z-index: 2;
             background: 0 0;
+            font-size: 1.5rem;
+            border-radius: 2px;
         }
 
         textarea {
@@ -205,7 +213,7 @@ input[type="color"]{
             left: 0;
             color: @green-default;
             font-size: 1.5rem;
-            line-height: 3.6rem;
+            line-height: 4.2rem;
             padding: 0 1.2rem;
         }
 
@@ -225,9 +233,10 @@ input[type="color"]{
         }
 
         .title-filter {
-            height: 3.4rem;
+            height: 4.2rem;
             position: relative;
             margin-bottom: 2rem;
+            border-radius: 2px;
 
             @media(min-width: @xs-min) {
                 margin-bottom: 0;
@@ -244,7 +253,7 @@ input[type="color"]{
                 top: 0;
                 right: 1.2rem;
                 z-index: 2;
-                height: 34px;
+                height: 4.2rem;
             }
         }
     }

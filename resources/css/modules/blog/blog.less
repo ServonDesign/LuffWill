@@ -14,7 +14,7 @@
 	    
 
 	@media(min-width: @md-min) {
-		margin: 3.5rem auto 5rem;
+		margin: 4.4rem auto 5rem;
 		padding: 0 3rem !important;
 	}
 
@@ -27,12 +27,15 @@
 	&__sidebar,
 	&__results{
 
-		padding: 2rem 0;
-
 		@media(min-width: @lg-min) {
 			//padding: 5rem 0;
+			padding: 2rem 0;
 		}
 
+	}
+
+	&__sidebar {
+		padding: 2rem 0;
 	}
 
 	&__details,
@@ -90,11 +93,16 @@
 			top: 0;
 			left: 0;
 			background-color: #f9fcf2;
-			width: 50vw;
+			width: 100vw;
 			height: 100%;
 
 			@media(min-width: @md-min) {
-				top: -4rem; 
+				width: 50vw; 
+			}
+			    
+
+			@media(min-width: @md-min) {
+				top: -4.5rem; 
 			}
 			    
 		}
