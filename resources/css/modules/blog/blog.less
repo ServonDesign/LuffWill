@@ -1,12 +1,22 @@
 .blog{
 	.container();
-
 	padding: 0 2.5rem;
+	margin: 3.5rem 0 5rem;
+
+	@media(min-width: @xs-min) {
+		margin: 3.5rem auto 5rem; 
+		padding: 0 3rem !important; 
+	}
 
 	@media(min-width: @sm-min) {
-		padding: 0 3rem; 
+		padding: 0 3rem !important; 
 	}
 	    
+
+	@media(min-width: @md-min) {
+		margin: 3.5rem 0 5rem;
+		padding: 0 3rem !important;
+	}
 
 	@media(min-width: @lg-min) {
 		margin-bottom: 9rem;
@@ -17,10 +27,10 @@
 	&__sidebar,
 	&__results{
 
-		padding: 2rem 0;
+		//padding: 2rem 0;
 
 		@media(min-width: @lg-min) {
-			padding: 5rem 0;
+			//padding: 5rem 0;
 		}
 
 	}
@@ -31,7 +41,7 @@
 		.column-m(7);
 		.flex-grow(1);
 
-		margin: 0;
+		margin: 0 !important;
 	}
 
 	&__details {
@@ -56,6 +66,7 @@
 	&__sidebar{
 		.push(1);
 		.column(4);
+		margin-right: 0 !important;
 
 		&--has-background{
 			position: relative;
