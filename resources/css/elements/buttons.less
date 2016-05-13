@@ -37,6 +37,9 @@ button {
       display: inline-block;
       overflow: hidden;
       text-align: left;
+
+      width: 100%;
+      text-align: center;
     }
 
     svg {
@@ -110,10 +113,17 @@ button {
 .btn-results-cta {
   border-radius: 2px;
   width: 14rem;
+
+  span {
+    text-align: center;
+    width: 100%;
+  }
+
   svg {
     width: 1.6rem;
     height: 1.6rem;
     fill: @light-gray;
+    margin-top: -.4rem;
   }
 }
 
@@ -126,12 +136,19 @@ button {
 
 .btn-more-details {
   width: 14rem;
+
+  span {
+    text-align: center;
+    width: 100%;
+  }
+
   svg {
     fill: @light-gray;
     width: 1.5rem !important;
     height: 2rem !important;
     margin-top: -.5rem;
-    //float: right;
+    margin-left: 0.5rem;
+    margin-right: -0.5rem;
   }
 }
 
