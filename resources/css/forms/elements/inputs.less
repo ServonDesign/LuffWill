@@ -26,6 +26,7 @@ input[type="color"]{
     background-image: none;
     border: 1px solid @input-border;
     font-family: @font-family;
+    height: 4.2rem;
 
     .placeholder();
 
@@ -112,6 +113,11 @@ input[type="color"]{
                 
         }
 
+        select,
+        input {
+            height: 4.2rem;
+        }
+
         select {
             width: 8rem;
             border-radius: 0px;
@@ -119,6 +125,8 @@ input[type="color"]{
             position: relative;
             z-index: 2;
             background: 0 0;
+            font-size: 1.5rem;
+            border-radius: 2px;
         }
 
         textarea {
@@ -140,6 +148,7 @@ input[type="color"]{
         }
 
         input {
+            border: 1px solid #e1e1e1;
             font-size: 1.5rem;
         }
 
@@ -205,7 +214,7 @@ input[type="color"]{
             left: 0;
             color: @green-default;
             font-size: 1.5rem;
-            line-height: 3.6rem;
+            line-height: 4.2rem;
             padding: 0 1.2rem;
         }
 
@@ -229,14 +238,13 @@ input[type="color"]{
             height: 4.2rem;
             position: relative;
             margin-bottom: 2rem;
+            border-radius: 2px;
+            border: 1px solid #e1e1e1;
 
-            @media(min-width: @xs-min) {
-                margin-bottom: 0;
-            }
-                
-
+ 
             @media(min-width: @sm-min) {
                 margin-right: 3rem;
+                margin-bottom: 0;
             }
                 
 
