@@ -1,7 +1,7 @@
 .blog{
 	.container();
 	padding: 0 2.5rem;
-	margin: 3.5rem 0 5rem;
+	margin: 3.5rem auto 5rem;
 
 	@media(min-width: @xs-min) {
 		margin: 3.5rem auto 5rem; 
@@ -14,7 +14,7 @@
 	    
 
 	@media(min-width: @md-min) {
-		margin: 3.5rem 0 5rem;
+		margin: 3.5rem auto 5rem;
 		padding: 0 3rem !important;
 	}
 
@@ -27,7 +27,7 @@
 	&__sidebar,
 	&__results{
 
-		//padding: 2rem 0;
+		padding: 2rem 0;
 
 		@media(min-width: @lg-min) {
 			//padding: 5rem 0;
@@ -53,6 +53,18 @@
 		p {
 			font-size: 1.6rem;
 			color: @dark-gray;
+		}
+
+		h2 {
+			margin: 4rem 0 2rem;
+		}
+
+		figure {
+			margin: 3rem 0;
+		}
+
+		img {
+			margin-bottom: 3rem;
 		}
 	}
 
@@ -80,6 +92,11 @@
 			background-color: #f9fcf2;
 			width: 50vw;
 			height: 100%;
+
+			@media(min-width: @md-min) {
+				top: -4rem; 
+			}
+			    
 		}
 	}
 
@@ -96,7 +113,7 @@
 		background: -moz-radial-gradient(at top, #F2FAE6 0%, #FFF 100%);
 		background: -o-radial-gradient(at top, #F2FAE6 0%, #FFF 100%);
 		background: -webkit-radial-gradient(at top, #F2FAE6 0%, #FFF 100%);
-		background: radial-gradient(at bottom, #F2FAE6 0%, #FFF 100%);
+		background: radial-gradient(at top, #F2FAE6 0%, #FFF 100%);
 	}
 }
 

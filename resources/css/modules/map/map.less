@@ -26,7 +26,7 @@
 	&__control {
 		.flexbox();
 		.justify-content(end);
-		.flex-direction(column);
+		.flex-direction(row);
 		width: 100%;
 
 		@media(min-width: @sm-min) {
@@ -36,6 +36,19 @@
 		@media(min-width: @md-min) {
 			.justify-content(end);
 			margin: 0;
+		}
+
+		button span > span {
+			float: none;
+		    width: auto;
+		    vertical-align: top;
+
+		    display: none;
+
+		    @media(min-width: @md-min) {
+		    	display: inline-block; 
+		    }
+		        
 		}
 
 	}

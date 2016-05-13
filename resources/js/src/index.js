@@ -1,4 +1,8 @@
-import $ from "./../vendor/jquery/dist/jquery";
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+
+//import $ from "jquery";
 import noUiSlider from "./../vendor/noUiSlider/nouislider";
 import wNumb from "./../vendor/wNumb/wNumb";
 import {sum, square, MyClass} from "./import";
@@ -7,6 +11,7 @@ import {rangeSlider} from "./rangeSlider";
 import {modal} from "./modal";
 import {themeSwitch} from "./themeSwitch";
 import "./../vendor/mmenu.min";
+import slick from "slick-carousel";
 
 $(document).ready(init);
 
@@ -32,5 +37,6 @@ function runImportedFunctions(){
         $(this).next().focus();
     });
 
+   $("#slider").slick();
 	
 }

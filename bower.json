@@ -1,13 +1,17 @@
 {
-	"name": "app",
-	"version": "1.0.0",
-	"main": "resources/js/main.js",
-	"ignore": [
-   		".jshintrc",
-    	"**/*.txt"
-	],
-	"dependencies": {
-		"jquery" : "",
-		"underscore" : ""
-	}
+  "name": "app",
+  "version": "1.0.0",
+  "main": "resources/js/main.js",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "jquery": "",
+    "underscore": "",
+    "slick-carousel": "^1.6.0"
+  },
+  "devDependencies": {
+    "slick-carousel": "^1.6.0"
+  }
 }

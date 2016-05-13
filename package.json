@@ -18,9 +18,12 @@
     "gulp-svgstore": "^6.0.0",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
+    "jquery": "^2.2.3",
     "less-plugin-clean-css": "^1.5.1",
     "merge-stream": "^1.0.0",
     "open": "0.0.5",
+    "slick-carousel": "^1.6.0",
+    "slick-carousel-browserify": "^1.6.12",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
