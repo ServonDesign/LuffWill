@@ -36,24 +36,155 @@
 
 }
 
-.modal-gallery {
+.modal-plan {
+
   background: #ffffff;
   margin: 0 auto;
-  padding: 4rem;
-  z-index: 2;
+  z-index: -1;
   position: fixed;
   top: 50%;
   left: 0;
   right: 0;
   transform: translate(0%, -50%);
   width: 90%;
-  height: 85rem;
+  visibility: hidden;
+  display: none;
 
+   &.isActive {
+    display: block;
+    visibility: visible;
+    z-index: 2;
+  }
+  
+  &--container {
+    padding: 5%;
+    max-height: 29rem;
+    overflow: hidden;
+
+    @media(min-width: @sm-min) {
+      max-height: 79rem; 
+    }
+  }
+
+  .btn-modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    z-index: 10;
+    background: transparent;
+
+    @media(min-width: @sm-min) {
+      width: 7.3rem;
+      height: 7.3rem;
+    }
+        
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      stroke: #606060;
+
+      @media(min-width: @sm-min) {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+
+}
+
+
+.modal-gallery {
+
+  background: #ffffff;
+  margin: 0 auto;
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(0%, -50%);
+  width: 90%;
+  visibility: hidden;
+  opacity: 0;
+
+   &.isActive {
+    display: block;
+    visibility: visible;
+    z-index: 2;
+    opacity: 1;
+  }
+
+  .btn-modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    z-index: 10;
+    background: transparent;
+    display: none;
+
+    @media(min-width: @sm-min) {
+      width: 7.3rem;
+      height: 7.3rem;
+      display: block;
+    }
+        
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      stroke: #606060;
+
+      @media(min-width: @sm-min) {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  } 
+}
+
+.modal-gallery--container {
   .flexbox();
+  max-height: 29rem;
+  overflow: hidden;
 
-  .modal-sidenav {}
+  @media(min-width: @sm-min) {
+    max-height: 79rem; 
+  }
+    
+  .modal-sidenav {
+    max-width: 12rem;
+    padding: 0 3rem;
+    .flexbox();
+    .align-items(center);
+    display: none;
 
-  .modal-main {}
+    @media(min-width: @sm-min) {
+      .flexbox();
+      .align-items(center); 
+    }
+        
+
+    .slider-nav {
+      height: 100%;
+    }
+
+    .slick-slide {
+      display: block;
+      max-width: 6.9rem !important;
+      //height: 6.9rem !important;
+      margin: 0.5rem 0;
+    }
+
+  }
+
+  .modal-main {
+    width: 100%;
+  }
 }
 
 .backdrop {
