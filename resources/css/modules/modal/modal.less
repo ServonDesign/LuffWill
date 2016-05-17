@@ -97,8 +97,6 @@
 
 
 .modal-gallery {
-
-  background: #ffffff;
   margin: 0 auto;
   z-index: -1;
   position: fixed;
@@ -119,7 +117,7 @@
 
   .btn-modal-close {
     position: absolute;
-    right: 0;
+    right: 2px;
     top: 0;
     width: 3rem;
     height: 3rem;
@@ -128,9 +126,17 @@
     display: none;
 
     @media(min-width: @sm-min) {
+      width: 5.3rem;
+      height: 5.3rem;
+      display: block;
+      right: 2px;
+    }
+
+    @media(min-width: @md-min) {
       width: 7.3rem;
       height: 7.3rem;
       display: block;
+      right: 0px;
     }
         
 
@@ -157,10 +163,12 @@
   }
     
   .modal-sidenav {
-    max-width: 12rem;
-    padding: 0 3rem;
+    background: #ffffff;
+    width: 13.5rem;
+    //padding: 0 3rem;
     .flexbox();
     .align-items(center);
+    .justify-content(center);
     display: none;
 
     @media(min-width: @sm-min) {
@@ -168,22 +176,39 @@
       .align-items(center); 
     }
         
-
     .slider-nav {
       height: 100%;
     }
 
     .slick-slide {
       display: block;
-      max-width: 6.9rem !important;
-      //height: 6.9rem !important;
-      margin: 0.5rem 0;
+      width: 6.6rem !important;
+      height: 6.6rem !important;
+      margin: 0.5rem 3rem;
+    }
+
+    .slick-arrow {
+      width: 100% !important;
+    }
+
+    .slider-img{
+      //background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
     }
 
   }
 
   .modal-main {
     width: 100%;
+
+    .slider-img{
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
   }
 }
 

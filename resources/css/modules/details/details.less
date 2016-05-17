@@ -63,6 +63,27 @@
 
     .details__image {
       width: 100%;
+      position: relative;
+      overflow: hidden;
+
+      @media(min-width: @lg-min) { 
+        min-height: 50rem;  
+      }
+          
+
+      .img-container {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+
+        @media(min-width: @lg-min) { 
+          position: absolute;
+        }
+            
+      }
     }
 
 
@@ -88,7 +109,7 @@
     }
 
     @media(min-width: @lg-min) {
-      padding: 0 7.6rem 0 4rem;
+      padding: 5rem 7.6rem 5rem 4rem;
       width: auto;
       .justify-content(start);
       .flex-wrap(nowrap);
@@ -193,6 +214,11 @@
 
     .details__sidecontent {
       padding: 0;
+
+      @media(min-width: @lg-min) { 
+        width: 27.7rem;  
+      }
+          
     }
 
     .details__sidebtn {

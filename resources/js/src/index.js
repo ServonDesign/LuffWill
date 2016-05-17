@@ -34,9 +34,21 @@ function runImportedFunctions(){
 		arrow: true,
 		responsive: [
 		    {
-		      breakpoint: 1024,
+		      breakpoint: 1280,
 		      settings: {
 		        slidesToShow: 5,
+		      }
+		    },
+		    {
+		      breakpoint: 968,
+		      settings: {
+		        slidesToShow: 4,
+		      }
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 3,
 		      }
 		    }
 	    ]

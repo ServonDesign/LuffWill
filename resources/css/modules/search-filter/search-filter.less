@@ -166,6 +166,20 @@
     color: @orange-light;
   }
 
+   .search-filter--map {
+    .btn {
+      @media(min-width: @lg-min) { 
+        background: none;
+        color: @orange-default;
+        border: 1px solid @orange-default;  
+      }
+      
+      svg {
+        fill: @orange-default;
+      }    
+    }
+  }
+
   form {
     #slider-snap-value-lower,
     #slider-snap-value-upper {
@@ -243,6 +257,21 @@
 
     input::-moz-placeholder {
       font-size: 1.4rem;
+    }
+  }
+
+  .search-filter--map {
+    .btn {
+      @media(min-width: @lg-min) { 
+        background: none;
+        color: @green-default;
+        border: 1px solid @green-default;  
+      }
+
+      svg {
+        fill: @green-default;
+      }  
+          
     }
   }
 

@@ -329,6 +329,14 @@
 		    c0.1,0.1,0.2,0.2,0.2,0.2c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3C17.4,19,24,12.6,24,8C24,3,19.9,0,16,0z" />
 		        </g>
 		    </symbol>
+		    <symbol id="search-btn-dt" viewBox="0 0 24 24">
+		        <g>
+		            <path d="M9,0C4.6,0,0,3.4,0,9c0,5.3,8,13.4,8.3,13.7C8.5,22.9,8.7,23,9,23s0.5-0.1,0.7-0.3C10,22.4,18,14.3,18,9
+		    C18,3.4,13.4,0,9,0z M9,12c-1.7,0-3-1.3-3-3s1.3-3,3-3s3,1.3,3,3S10.7,12,9,12z" />
+		            <path data-color="color-2" fill="#a4a4a4" d="M16,0c-0.2,0-0.4,0-0.6,0C18.1,1.9,20,5,20,9c0,3.4-2.5,7.5-4.9,10.5
+		    c0.1,0.1,0.2,0.2,0.2,0.2c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3C17.4,19,24,12.6,24,8C24,3,19.9,0,16,0z" />
+		        </g>
+		    </symbol>
 		    <symbol id="search-btn" viewBox="0 0 24 24">
 		        <g>
 		            <path fill="#ffffff" d="M9,0C4.6,0,0,3.4,0,9c0,5.3,8,13.4,8.3,13.7C8.5,22.9,8.7,23,9,23s0.5-0.1,0.7-0.3C10,22.4,18,14.3,18,9
@@ -660,7 +668,7 @@
 				</div>
 				<div class="search-filter--map">
 					<button class="btn">
-						<span>Map Search<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn"></use></svg></span>
+						<span>Map Search<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search-btn-dt"></use></svg></span>
 					</button>
 				</div>
 			</div>
@@ -681,9 +689,12 @@
 			</div>
 			<div class="details--info">
 				<div class="details__image">
-					<div class="ratio--3-2">
+					<!-- <div class="ratio--3-2">
 						<img src="./resources/imgs/placeholder-image.jpg" alt="placeholder">
-					</div>
+					</div> -->
+					<!-- <div class="ratio--3-2"> -->
+						<div class="ratio--3-2 img-container" style="background-image: url('./resources/imgs/tmp-image-large.jpg');"></div>
+					<!-- </div> -->
 				</div>
 				<div class="details__sideinfo">
 					<button class="btn btn-gallery-cta hide-min-md">
@@ -1209,34 +1220,130 @@
 		<div class="modal-gallery--container">
 			<div class="modal-sidenav">
 				<div class="slider-navigation">
-					<div class="slider-item" data-slide="1" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-bedroom-1.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="2" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-bedroom.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="3" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-dining-room-1.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="4" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-dining-room-2.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="5" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-dining-room.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="6" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-exterior.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="7" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-kitchen.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="8" ><div class="ratio--4-3"><img src="./resources/imgs/details/country-garden-1.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="9" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-patio-1.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="10" ><div class="ratio--4-3"><img src="./resources/imgs/details/contemporary-patio-2.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="11" ><div class="ratio--4-3"><img src="./resources/imgs/details/traditional-bedroom.jpg" alt=""></div></div>
-					<div class="slider-item" data-slide="12" ><div class="ratio--4-3"><img src="./resources/imgs/details/traditional-bedroom-1.jpg" alt=""></div></div>
+					<div class="slider-item" data-slide="1">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-bedroom-1.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="2">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-dining-room-1.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="3">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-dining-room-2.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="4">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-dining-room-2.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="5">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-dining-room.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="6">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-exterior.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="7">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-kitchen.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="8">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/country-garden-1.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="9">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-patio-1.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="10">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/contemporary-patio-2.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="11">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/traditional-bedroom.jpg') "></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slide="12">
+						<div class="ratio--1-1">
+							<div class="slider-img" style=" background-image: url('./resources/imgs/details/traditional-bedroom-1.jpg') "></div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="modal-main">
 				<div class="slider-main">
-					<div class="slider-item" data-slidemain="1" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-bedroom-1.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="2" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-bedroom.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="3" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-dining-room-1.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="4" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-dining-room-2.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="5" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-dining-room.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="6" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-exterior.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="7" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-kitchen.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="8" ><div class="ratio--3-2"><img src="./resources/imgs/details/country-garden-1.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="9" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-patio-1.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="10" ><div class="ratio--3-2"><img src="./resources/imgs/details/contemporary-patio-2.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="11" ><div class="ratio--3-2"><img src="./resources/imgs/details/traditional-bedroom.jpg" alt=""></div></div>
-					<div class="slider-item" data-slidemain="12" ><div class="ratio--3-2"><img src="./resources/imgs/details/traditional-bedroom-1.jpg" alt=""></div></div>
+					<div class="slider-item" data-slidemain="1">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-bedroom-1.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="2">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-dining-room-1.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="3">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-dining-room-2.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="4">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-bedroom-1.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="5">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-dining-room.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="6">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-exterior.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="7">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-kitchen.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="8">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/country-garden-1.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="9">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-patio-1.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="10">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/contemporary-patio-2.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="11">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/traditional-bedroom.jpg');"></div>
+						</div>
+					</div>
+					<div class="slider-item" data-slidemain="12">
+						<div class="ratio--16-9">
+							<div class="slider-img" style="background-image: url('./resources/imgs/details/traditional-bedroom-1.jpg');"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
